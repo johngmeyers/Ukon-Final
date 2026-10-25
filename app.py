@@ -6,6 +6,7 @@ only: brief generation, the verifier and Q&A are unchanged.
 Run:  .venv/bin/streamlit run app.py
 """
 import json
+import re
 from datetime import date
 from html import escape
 from urllib.parse import quote
@@ -65,7 +66,6 @@ I_REFRESH = ("M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8
              "h7V4l-2.35 2.35z")
 I_MORE = ("M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
           "m0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z")
-I_FORWARD = "M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"
 
 st.html("""
 <style>
@@ -140,21 +140,26 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 .body p { margin: 4px 0; }
 .sig { color: #5f6368; margin-top: 18px; font-size: 13px; }
 .thread-sep { border-top: 1px solid #e0e0e0; margin: 8px 0 12px 56px; }
-details.cite { display: inline-block; vertical-align: baseline; margin: 0 2px; }
-details.cite summary { list-style: none; cursor: pointer; font-size: 11px; color: #0b57d0; padding: 0 5px;
-  border: 1px solid #c2d5f5; border-radius: 4px; background: #f3f7fe; font-family: Roboto, Arial, sans-serif; }
-details.cite summary::-webkit-details-marker { display: none; }
-details.cite[open] { display: block; margin: 4px 0; }
-details.cite[open] summary { display: inline-block; }
-.cite-body { font-size: 13px; border-left: 3px solid #c2d5f5; padding: 4px 10px; margin-top: 4px; background: #f8fafd; }
-.cite-body q { font-style: italic; }
+/* Citations as numbered footnotes: plain HTML that renders in any email client */
+sup.fn { font-size: 11px; color: #0b57d0; font-weight: 500; margin-left: 1px; }
+.sources { border-top: 1px solid #e0e0e0; margin-top: 18px; padding-top: 4px; }
+.sources ol { padding-left: 22px; margin: 4px 0; }
+.sources li { font-size: 13px; line-height: 1.5; margin-bottom: 6px; color: #3c4043; }
+.sources q { font-style: italic; }
 table.opts { border-collapse: collapse; font-size: 13px; margin: 6px 0; }
 table.opts th { font-weight: 700; } table.opts th, table.opts td { border-bottom: 1px solid #e0e0e0; padding: 4px 16px 4px 0; text-align: left; }
 .badge { font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 4px; color: #b3261e; border: 1px solid #b3261e; }
 .note { font-size: 12px; color: #5f6368; }
 .warn { font-size: 13px; background: #fef7e0; border-left: 3px solid #f9ab00; padding: 4px 10px; margin: 6px 0; }
-.fwd { color: #5f6368; font-size: 13px; margin-top: 8px; }
-[class*="st-key-draft-"] { margin-left: 56px; width: calc(100% - 56px) !important; }
+/* CPL handoff: the drafted text plus a mailto: button, which real email clients support */
+.cpl-draft { border: 1px solid #dadce0; border-radius: 8px; padding: 10px 14px; margin: 10px 0 12px 0; background: #fff; }
+.cpl-draft .head { font-size: 13px; color: #5f6368; line-height: 1.7; border-bottom: 1px solid #f1f3f4; padding-bottom: 6px;
+  margin-bottom: 8px; }
+.cpl-draft .head b { display: inline-block; width: 58px; font-weight: 500; }
+.cpl-draft .text { white-space: pre-wrap; }
+a.mailbtn { display: inline-flex; align-items: center; gap: 8px; background: #0b57d0; color: #fff !important;
+  border-radius: 18px; padding: 8px 18px; text-decoration: none !important; font: 500 14px Roboto, Arial, sans-serif; }
+a.mailbtn:hover { background: #0a4cb8; box-shadow: 0 1px 3px rgba(60,64,67,.3); }
 [class*="st-key-go-"] button { border-radius: 18px; border: 1px solid #747775; background: #fff; color: #0b57d0; font-size: 13px; }
 [data-testid="stForm"] { border: none; border-radius: 16px; box-shadow: 0 1px 3px rgba(60,64,67,.3), 0 4px 8px 3px rgba(60,64,67,.15);
   margin-left: 56px; width: calc(100% - 56px); padding: 12px 16px; }
@@ -194,18 +199,42 @@ def long_date(ind: dict, time: str) -> str:
     return date.fromisoformat(ind["indication_date"]).strftime("%a, %b %-d, %Y, ") + time
 
 
-def tags(citations: list[dict]) -> str:
-    """Inline [Policy X] tags; clicking one expands the section title and quote."""
-    out = []
-    for c in citations:
-        s = specimen.by_id().get(c["section_id"], {})
-        out.append(
-            f'<details class="cite"><summary>Policy {escape(c["section_id"])}</summary>'
-            f'<div class="cite-body"><b>{escape(c["section_id"])} · {escape(s.get("title", ""))}</b><br>'
-            f'<q>{escape(c["quote"])}</q><br>'
-            f'<span class="note">Page {s.get("page", "?")} of the sample form</span></div></details>'
+def section_label(section_id: str) -> str:
+    title = specimen.by_id().get(section_id, {}).get("title", "")
+    if section_id.startswith("DEC.Item"):
+        return f"Declarations, Item {section_id.removeprefix('DEC.Item')}"
+    if section_id.startswith("IX."):
+        return f"Definition of “{title}”"
+    if re.fullmatch(r"[IVX]+\.[A-W]", section_id):            # insuring agreements and exclusions
+        return f"{section_id} {title}"
+    return f"Section {section_id.split('.')[0]}: {title}"
+
+
+class Sources:
+    """Numbered footnotes for one email or reply: one number per policy section, listing its quotes."""
+
+    def __init__(self):
+        self.quotes: dict[str, list[str]] = {}       # section_id -> quotes, in first-cited order
+
+    def refs(self, citations: list[dict]) -> str:
+        nums = set()
+        for c in citations:
+            quotes = self.quotes.setdefault(c["section_id"], [])
+            if c["quote"] not in quotes:
+                quotes.append(c["quote"])
+            nums.add(list(self.quotes).index(c["section_id"]) + 1)
+        return f'<sup class="fn">{",".join(str(n) for n in sorted(nums))}</sup>' if nums else ""
+
+    def html(self) -> str:
+        if not self.quotes:
+            return ""
+        rows = "".join(
+            f'<li><b>{escape(section_label(sid))}</b> (p. {specimen.by_id().get(sid, {}).get("page", "?")}): '
+            + "; ".join(f"<q>{escape(q)}</q>" for q in quotes) + "</li>"
+            for sid, quotes in self.quotes.items()
         )
-    return "".join(out)
+        return (f'<div class="sources"><h4>Policy sources</h4><ol>{rows}</ol>'
+                f'<div class="note">{escape(config.SAMPLE_FORM_LABEL)}</div></div>')
 
 
 def message(av_class: str, initial: str, name: str, addr: str, to: str, when: str, body: str) -> str:
@@ -267,7 +296,7 @@ with nav_col:
     """)
     controls = st.expander("Demo controls")
     with controls:
-        use_cache = st.toggle("Use cached brief", value=False,
+        use_cache = st.toggle("Use cached brief", value=True,
                               help="Load the saved brief instead of calling the API. Replies stay live.")
         regenerate = st.button("Regenerate brief", disabled=use_cache or state.open in (None, DIGEST))
         st.caption(f"Model: `{config.MODEL}`")
@@ -380,6 +409,7 @@ with panel:
     parts = [f'<div class="lead">{escape(headline(ind))}</div>',
              f'<div class="note">{escape(client["name"])} · {escape(industry["industry"])} · '
              f'{escape(client["city"])}, {escape(client["state"])}</div>']
+    sources = Sources()
     if result:
         brief, report = result["brief"], result["report"]
         parts.append(f'<h4>Why it matters</h4><p>{escape(brief["why_it_matters"])}</p>')
@@ -388,15 +418,16 @@ with panel:
         if removed:
             parts.append(f'<div class="warn">{len(removed)} claim{"s" if len(removed) > 1 else ""} removed: '
                          "citation didn't match the policy.</div>")
-        points = "".join(f"<li>{escape(p['text'])} {tags(p['citations'])}</li>" for p in brief["talking_points"])
+        points = "".join(f"<li>{escape(p['text'])}{sources.refs(p['citations'])}</li>" for p in brief["talking_points"])
         parts.append(f"<h4>Talking points</h4><ol>{points}</ol>")
         objections = "".join(
-            f"<li><b>“{escape(o['objection'])}”</b><br>{escape(o['response'])} {tags(o['citations'])}</li>"
+            f"<li><b>“{escape(o['objection'])}”</b><br>{escape(o['response'])}{sources.refs(o['citations'])}</li>"
             for o in brief["objections"]
         )
         parts.append(f"<h4>Objections</h4><ul>{objections}</ul>")
     parts.append(options_table(ind))
-    parts.append(f'<p class="note">{escape(config.SAMPLE_FORM_LABEL)}</p><div class="sig">— {SENDER}</div>')
+    parts.append(sources.html() or f'<p class="note">{escape(config.SAMPLE_FORM_LABEL)}</p>')
+    parts.append(f'<div class="sig">— {SENDER}</div>')
     when = long_date(ind, sent_time(client_id, clients))
     st.html(f'<div class="subj"><h2>{escape(subject(client))}</h2><span class="chip">Inbox</span></div>'
             + message("av-desk", "U", SENDER, SENDER_ADDR, "me", when, "".join(parts)))
@@ -410,9 +441,10 @@ with panel:
         if a and a["answerable"]:
             note = ('<div class="warn">This coverage is in the policy form, but it is not included on this quote.</div>'
                     if a["in_policy_not_on_quote"] else "")
+            reply_sources = Sources()
+            body = f"<p>{escape(a['answer'])}{reply_sources.refs(a['citations'])}</p>{note}"
             st.html('<div class="thread-sep"></div>'
-                    + message("av-desk", "U", SENDER, SENDER_ADDR, "me", "just now",
-                              f"<p>{escape(a['answer'])} {tags(a['citations'])}</p>{note}"))
+                    + message("av-desk", "U", SENDER, SENDER_ADDR, "me", "just now", body + reply_sources.html()))
         else:
             if a:
                 why = escape(a["reason"])
@@ -423,15 +455,20 @@ with panel:
                 why = "I couldn't confirm an answer from the policy wording, so this one needs your CPL."
                 draft = (f"Hi, my client {client['name']} ({industry['industry'].lower()}) asked: "
                          f"\"{item['question']}\" Can you advise how this policy responds?")
+            # Nothing is sent. A mailto: link opens a pre-filled message in the agent's own
+            # email client, which is what a real email can offer (no scripts or copy buttons).
+            subj = f"Coverage question: {client['name']}"
+            href = (f"mailto:{quote(config.CPL_EMAIL)}?subject={quote(subj)}&body={quote(draft)}")
+            to_line = escape(config.CPL_EMAIL) or "Your CPL (add their address)"
             st.html('<div class="thread-sep"></div>'
                     + message("av-desk", "U", SENDER, SENDER_ADDR, "me", "just now",
-                              f"<p><b>{icon(I_FORWARD, 16, '#444746')} Forwarded to your CPL</b></p>"
-                              f'<p class="note">{why}</p>'
-                              f'<div class="fwd">---------- Forwarded message ---------<br>'
-                              f"To: Your CPL<br>Subject: Coverage question: {escape(client['name'])}</div>"))
-            with st.container(key=f"draft-{client_id}-{n}"):
-                st.caption("Drafted message (use the copy icon):")
-                st.code(draft, language=None, wrap_lines=True)
+                              f"<p><b>This one needs your CPL</b></p><p>{why}</p>"
+                              f'<div class="cpl-draft"><div class="head"><div><b>To</b>{to_line}</div>'
+                              f'<div><b>Subject</b>{escape(subj)}</div></div>'
+                              f'<div class="text">{escape(draft)}</div></div>'
+                              f'<a class="mailbtn" href="{escape(href)}" target="_blank">'
+                              f'{icon(I_MAIL, 18, "#ffffff")}Email your CPL</a>'
+                              '<p class="note">Opens a new message with this text, ready to review and send.</p>'))
 
     with st.form("reply", clear_on_submit=True):
         question = st.text_area("Reply", placeholder="Reply to ask a question about this policy",

@@ -19,6 +19,9 @@ JUDGE_MODEL = "claude-haiku-5-5"
 JUDGE_PRICE_INPUT_PER_TOKEN = 0.10 / 1_000_000
 JUDGE_PRICE_OUTPUT_PER_TOKEN = 0.50 / 1_000_000
 
+# CPL address for the "Email your CPL" button. Blank: the agent fills in To.
+CPL_EMAIL = ""
+
 # Paths
 DATA_DIR = ROOT / "data"
 SPECIMEN_PDF = DATA_DIR / "specimen.pdf"
