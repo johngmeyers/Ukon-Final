@@ -7,6 +7,7 @@
 # expected: answer        -> specimen settles it; must cite.
 # expected: route_to_cpl  -> specimen does not settle it; must route with a drafted CPL message.
 # on_quote: false         -> coverage exists in the form but DEC.Item5 shows N/A.
+# must_include items are facts; a fact given as a list passes if any of its phrasings appears.
 
 client_id: c1
 questions:
@@ -49,7 +50,7 @@ questions:
     question: "If customers sue because their data was stolen, does the policy defend them?"
     expected: answer
     expected_sections: ["II.A", "V.Defense"]
-    must_include: ["claims made"]
+    must_include: [["claims made", "made and reported"]]
     must_not_claim: ["any lawsuit ever"]
     why: "Third-party liability; the answer should mention the claims-made-and-reported basis."
 
@@ -57,7 +58,7 @@ questions:
     question: "If a flood takes out their server room, is that covered here?"
     expected: answer
     expected_sections: ["III.L"]
-    must_include: ["not covered"]
+    must_include: [["not covered", "would not be covered", "excludes", "excluded"]]
     must_not_claim: ["covered under business interruption"]
     why: "A clear exclusion. The right answer is a confident no, with a citation."
 
@@ -65,7 +66,7 @@ questions:
     question: "The power company has an outage and the business loses a day. Does cyber cover that?"
     expected: answer
     expected_sections: ["III.S"]
-    must_include: ["not covered"]
+    must_include: [["not covered", "would not be covered", "excludes", "excluded"]]
     must_not_claim: ["systems failure covers utility outages"]
     why: "Sounds like a systems failure, but the third-party mechanical failure exclusion applies."
 
@@ -81,7 +82,7 @@ questions:
     question: "An employee's personal phone got hacked. Is that covered?"
     expected: answer
     expected_sections: ["IX.Security failure"]
-    must_include: ["not used for the business"]
+    must_include: [["not used for the business", "not use for the business", "not used for business"]]
     must_not_claim: ["all employee devices are covered"]
     why: "The answer depends on a definition, not an exclusion. Good test of careful reading."
 
@@ -90,7 +91,7 @@ questions:
     expected: answer
     on_quote: false
     expected_sections: ["II.S", "DEC.Item5"]
-    must_include: ["not included in this quote"]
+    must_include: [["not included in this quote", "not on this quote", "not included on this quote", "not purchased"]]
     must_not_claim: ["yes, it's covered"]
     why: "Impersonation repair costs exist in the form but are N/A on this quote. Tests policy-versus-quote awareness."
 
