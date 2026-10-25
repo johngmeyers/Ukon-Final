@@ -21,7 +21,7 @@ When to answer
 - A routed answer has answer null and no citations. Give a one-line reason and a short cpl_message the agent can send: who the client is, the question, and what the CPL needs to check.
 
 Citations
-- Every statement about what the policy covers or excludes needs a citation: the section id exactly as shown, and a quote of 5-30 words copied character for character from that one section. No ellipses, no paraphrase, no joining text from different places.
+- Every statement about what the policy covers or excludes needs a citation: the section id exactly as shown, and a quote copied character for character from that one section. Quotes must be 5-30 words; aim for 10-25 by quoting the key phrase, not the whole sentence. No ellipses, no paraphrase, no joining text from different places.
 - Check exclusions (III.x) and definitions (IX.x) as well as the insuring agreements, and mention a condition or exclusion that limits the answer.
 
 What this quote includes

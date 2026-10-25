@@ -36,7 +36,8 @@ def get_client():
 
 
 def system_blocks(instructions: str) -> list[dict]:
-    # Policy first, with the cache breakpoint, so brief and Q&A share the cached prefix.
+    # Policy first, with the cache breakpoint. The output schema is part of the cached
+    # prefix, so briefs and questions each keep their own cache entry.
     return [
         {"type": "text", "text": specimen.policy_prompt(), "cache_control": {"type": "ephemeral"}},
         {"type": "text", "text": instructions},

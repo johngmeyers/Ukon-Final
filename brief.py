@@ -5,6 +5,7 @@ CLI:  .venv/bin/python brief.py c1
 import json
 import re
 import sys
+from datetime import datetime, timezone
 
 from pydantic import BaseModel, Field, field_validator
 
@@ -29,7 +30,7 @@ Audience and length
 - The whole brief should read in about two minutes: under 400 words in total.
 
 Citations
-- Every statement about what the policy covers or excludes must carry at least one citation: the section id exactly as shown, and a quote of 5-30 words copied character for character from that one section. No ellipses, no paraphrase, no joining text from different places.
+- Every statement about what the policy covers or excludes must carry at least one citation: the section id exactly as shown, and a quote copied character for character from that one section. Quotes must be 5-30 words; aim for 10-25 by quoting the key phrase, not the whole sentence. No ellipses, no paraphrase, no joining text from different places.
 - Cite the section that actually says it: an insuring agreement (II.x) for what is covered, an exclusion (III.x) for what isn't, a definition (IX.x) for what a term includes, DEC.Item5 for limits, retentions and what this quote includes.
 - Industry context comes from the industry note and needs no citation, but don't present it as coverage.
 
@@ -38,7 +39,7 @@ What this quote includes
 - You don't know what the client's other policies cover. Don't claim what they include or exclude.
 
 Price
-- Never state, estimate or compare a price or premium. Refer to the price only with the exact token {PRICE_TOKEN}; the app fills it in.
+- Never state, estimate or compare a price or premium. Refer to the price only with the exact token {PRICE_TOKEN}; the app replaces it with the monthly price, like "$235.58 a month", so don't add "a month" or "per month" yourself.
 
 Security application
 - Never answer, or suggest answers to, the client's security application questions (MFA, backups and so on).
@@ -124,7 +125,26 @@ def monthly_price(ind: dict) -> str:
 
 
 def fill_price(text: str, ind: dict) -> str:
-    return text.replace(PRICE_TOKEN, monthly_price(ind))
+    return text.replace(PRICE_TOKEN, f"{monthly_price(ind)} a month")
+
+
+# ---------------------------------------------------------------- demo cache
+
+def cache_path(client_id: str):
+    return config.CACHE_DIR / f"{client_id}.json"
+
+
+def save_cache(client_id: str, brief: dict, report: dict, stats: dict) -> None:
+    config.CACHE_DIR.mkdir(exist_ok=True)
+    data = {"model": config.MODEL, "saved_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "brief": brief, "report": report, "stats": stats}
+    cache_path(client_id).write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
+
+
+def load_cache(client_id: str) -> dict | None:
+    """Saved brief as plain dicts. A verified brief can have fewer points than Brief allows."""
+    path = cache_path(client_id)
+    return json.loads(path.read_text()) if path.exists() else None
 
 
 def context_block(client: dict, industry: dict, ind: dict) -> str:
