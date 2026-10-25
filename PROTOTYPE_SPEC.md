@@ -33,7 +33,7 @@ The point of the demo is trust: the AI is useful, and it is visibly constrained.
 
 - Python 3.11+
 - `streamlit` for the UI
-- `anthropic` SDK, with **structured outputs** for schema-constrained output: `client.messages.parse(output_format=<PydanticModel>)`, which sends the schema as `output_config.format` and returns `parsed_output`. Forced tool use (`tool_choice` `any`/`tool`) returns a 400 on the current Sonnet, so don't use it. See "Structured output" below.
+- `anthropic` SDK, with **structured outputs** for schema-constrained output: `client.messages.create(output_config={"format": {"type": "json_schema", "schema": anthropic.transform_schema(<PydanticModel>)}})`, then Pydantic validation in our code. Forced tool use (`tool_choice` `any`/`tool`) returns a 400 on the current Sonnet, so don't use it. See "Structured output" below.
 - `pydantic` for schemas and validation
 - `pypdf` or `pdfplumber` for text extraction
 - `pyyaml` for the eval set
@@ -48,6 +48,7 @@ brief.py                    # brief generation
 qa.py                       # question answering
 verify.py                   # deterministic citation checker
 specimen.py                 # loads sections
+llm.py                      # shared structured-output call, retry, cost logging
 scripts/build_sections.py   # one-time: PDF -> data/specimen_sections.json
 scripts/run_evals.py        # runs the golden set, writes results
 data/specimen.pdf           # not committed if repo is ever public
@@ -111,7 +112,7 @@ One record per industry, already drafted (use the provided `industries.json` as 
 
 Checked against the Anthropic structured-outputs docs (2026-10-25): `claude-sonnet-5-5` supports structured outputs, and it rejects forced `tool_choice` (`any`/`tool`) with a 400. Pattern for `brief.py` and `qa.py`:
 
-1. Call `client.messages.parse(model=MODEL, output_format=Brief | Answer, ...)`. The SDK sends the schema as `output_config.format`, so the model's output is constrained to the schema.
+1. Call `client.messages.create(...)` with `output_config.format` set to `anthropic.transform_schema(Brief | Answer)`, so the model's output is constrained to the schema. (`messages.parse()` does the same but validates inside the SDK, so a failed attempt's token usage is lost; we validate ourselves to log every attempt.) Shared code lives in `llm.py`.
 2. Check `stop_reason` before using the result. On `"refusal"` or `"max_tokens"`, the output may not match the schema: treat it as a failure (for Q&A, route to a CPL; for the brief, show an error or the cached brief).
 3. The schema can't express everything: array `minItems` only supports 0 or 1, and `maxItems`, `minLength`/`maxLength` and numeric bounds aren't enforced by the API. So "exactly 3 talking points", "3-5 objections" and "quote is 5-30 words" are Pydantic validators, checked after the response comes back.
 4. On a Pydantic validation failure, retry once with the validation error appended to the user message. If the retry also fails, treat it as a failure as in step 2.
@@ -123,7 +124,7 @@ The citation verifier (`verify.py`) runs after this, on the validated object.
 
 One call per client. Inputs: client record, industry exposure note, indication, and all specimen sections (the whole policy fits in the prompt; no vector search). Section IDs are passed in so the model can cite them.
 
-Structured output (see "Structured output" below) with this schema:
+Structured output (see "Structured output" above) with this schema:
 
 ```python
 class Citation(BaseModel):
@@ -157,7 +158,7 @@ Rules for the system prompt:
 
 ## Question answering (`qa.py`)
 
-One call per question. Same inputs as the brief, plus the question. Structured output (see "Structured output" below) with this schema:
+One call per question. Same inputs as the brief, plus the question. Structured output (see "Structured output" above) with this schema:
 
 ```python
 class Answer(BaseModel):

@@ -5,10 +5,14 @@ ROOT = Path(__file__).parent
 
 # Model. Switch here; prices below must match.
 MODEL = "claude-sonnet-5-5"
+EFFORT = "medium"        # Sonnet 5.5 defaults to "high"; medium keeps briefs fast
+MAX_TOKENS = 16000
 
-# USD per token (Sonnet 5.5: $2 / $10 per million).
+# USD per token (Sonnet 5.5: $2 / $10 per million; cache writes 1.25x input, reads $0.20).
 PRICE_INPUT_PER_TOKEN = 2.00 / 1_000_000
 PRICE_OUTPUT_PER_TOKEN = 10.00 / 1_000_000
+PRICE_CACHE_WRITE_PER_TOKEN = 2.50 / 1_000_000
+PRICE_CACHE_READ_PER_TOKEN = 0.20 / 1_000_000
 
 # Paths
 DATA_DIR = ROOT / "data"
@@ -21,6 +25,7 @@ GOLDEN_SET = ROOT / "evals" / "golden_set.yaml"
 EVAL_RESULTS = ROOT / "evals" / "results.md"
 CACHE_DIR = ROOT / "cache"
 CALL_LOG = ROOT / "logs" / "calls.csv"
+VERIFY_LOG = ROOT / "logs" / "verifier_failures.csv"
 
 SAMPLE_FORM_LABEL = (
     "Sample form: Coalition Cyber Policy 3.0 specimen "
