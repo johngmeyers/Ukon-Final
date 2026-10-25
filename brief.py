@@ -30,7 +30,7 @@ Audience and length
 - The whole brief should read in about two minutes: under 400 words in total.
 
 Citations
-- Every statement about what the policy covers or excludes must carry at least one citation: the section id exactly as shown, and a quote copied character for character from that one section. Quotes must be 5-30 words; aim for 10-25 by quoting the key phrase, not the whole sentence. No ellipses, no paraphrase, no joining text from different places.
+- Every statement about what the policy covers or excludes must carry at least one citation: the section id exactly as shown, and a quote copied character for character from that one section. Take the section id from the <section> tag the quote appears in. Quotes must be 5-30 words; aim for 10-25 by quoting the key phrase, not the whole sentence. No ellipses, no paraphrase, no joining text from different places.
 - Cite the section that actually says it: an insuring agreement (II.x) for what is covered, an exclusion (III.x) for what isn't, a definition (IX.x) for what a term includes, DEC.Item5 for limits, retentions and what this quote includes.
 - Industry context comes from the industry note and needs no citation, but don't present it as coverage.
 

@@ -1,0 +1,557 @@
+[
+  {
+    "id": "q01",
+    "answer": {
+      "answerable": true,
+      "answer": "Yes, subject to conditions. The Ransomware and Cyber Extortion coverage pays cyber extortion expenses, which include money or virtual currency paid at the direction and demand of the extortionist, but only costs incurred with our prior written consent. The quote shows a $1,000,000 limit with a $2,500 retention for this coverage (and payments erode the aggregate limit). Have the client contact the insurer before paying anything, and confirm the sanctions provision does not prevent payment.",
+      "citations": [
+        {
+          "section_id": "II.I",
+          "quote": "We will pay on your behalf cyber extortion expenses resulting from cyber extortion first discovered by you during the policy period."
+        },
+        {
+          "section_id": "IX.Cyber extortion expenses",
+          "quote": "money, securities, Bitcoin, or other virtual currencies paid at the direction and demand of any person committing cyber extortion"
+        },
+        {
+          "section_id": "IX.Cyber extortion expenses",
+          "quote": "means the following reasonable and necessary costs incurred with our prior written consent"
+        },
+        {
+          "section_id": "DEC.Item5",
+          "quote": "I. RANSOMWARE AND CYBER EXTORTION | Limit: $1,000,000 | Retention: $2,500"
+        },
+        {
+          "section_id": "VIII.Sanctions",
+          "quote": "This Policy does not apply to the extent that trade or economic sanctions or other laws or regulations prohibit us from providing insurance"
+        }
+      ],
+      "in_policy_not_on_quote": false,
+      "cpl_message": null,
+      "reason": null
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": true,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": true
+    },
+    "passed": true,
+    "cost_usd": 0.014118,
+    "latency_s": 3.42,
+    "attempts": 1
+  },
+  {
+    "id": "q02",
+    "answer": {
+      "answerable": true,
+      "answer": "Yes. Insuring Agreement J pays business interruption loss, contingent business interruption loss and extra expenses when computer systems are interrupted longer than the waiting period by a security failure (such as a ransomware attack) or a systems failure. It is on this quote at a $1,000,000 limit with a $2,500 retention and an 8-hour waiting period (1 hour if a DDoS attack is handled by a panel mitigation vendor). Coverage is limited to an indemnity period of up to 180 days, and the client must file a signed proof of loss within 90 days of discovering the failure, so the agent should confirm the client understands those conditions.",
+      "citations": [
+        {
+          "section_id": "II.J",
+          "quote": "directly resulting from the partial or complete interruption of computer systems for a period longer than the waiting period caused by a security failure or systems failure"
+        },
+        {
+          "section_id": "DEC.Item5",
+          "quote": "Limit: $1,000,000 | Retention: $2,500 | i. Waiting period: 8 hours | ii. Enhanced waiting period: 1 hour"
+        },
+        {
+          "section_id": "IX.Indemnity period",
+          "quote": "However, in no event will the indemnity period exceed 180 days."
+        },
+        {
+          "section_id": "V.Proof of loss",
+          "quote": "you must complete and sign a written, detailed, and affirmed proof of loss within 90 days after your discovery of the security failure"
+        }
+      ],
+      "in_policy_not_on_quote": false,
+      "cpl_message": null,
+      "reason": null
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": true,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": true
+    },
+    "passed": true,
+    "cost_usd": 0.013972,
+    "latency_s": 3.6,
+    "attempts": 1
+  },
+  {
+    "id": "q03",
+    "answer": {
+      "answerable": true,
+      "answer": "Yes, this looks like funds transfer fraud, which Insuring Agreement Q covers. The $40,000 wire falls within the $250,000 sublimit shown on the Declarations, subject to the $2,500 retention. Coverage depends on the instruction impersonating a vendor and being sent by someone other than the vendor without its knowledge, and on the incident being first discovered and reported during the policy period. Agent should confirm those facts, and that the loss is the client's own money rather than an employee's personal funds. The Basic option's $100,000 sublimit would also cover this amount.",
+      "citations": [
+        {
+          "section_id": "II.Q",
+          "quote": "We will pay funds transfer loss that you incur resulting from a funds transfer fraud first discovered by you during the policy period."
+        },
+        {
+          "section_id": "IX.Funds transfer fraud",
+          "quote": "which instruction purports to have been transmitted by you or your vendors, business partners, or existing clients, and impersonates such party"
+        },
+        {
+          "section_id": "DEC.Item5",
+          "quote": "Q. FUNDS TRANSFER FRAUD AND SOCIAL ENGINEERING | Limit: $250,000 | Retention: $2,500"
+        }
+      ],
+      "in_policy_not_on_quote": false,
+      "cpl_message": null,
+      "reason": null
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": true,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": true
+    },
+    "passed": true,
+    "cost_usd": 0.013366,
+    "latency_s": 3.54,
+    "attempts": 1
+  },
+  {
+    "id": "q04",
+    "answer": {
+      "answerable": true,
+      "answer": "Yes. Breach Response Costs (Item 5.G, $1,000,000 limit, $2,500 retention) cover the costs to notify affected individuals and to provide up to two years of credit or identity monitoring (longer if required by law). The costs must be reasonable and necessary, incurred with our prior written consent, and incurred within one year of discovering the actual or suspected security failure or data breach. The agent should confirm the client gets consent before engaging vendors, and that costs count against the aggregate limit unless the optional additional breach response limit box is checked.",
+      "citations": [
+        {
+          "section_id": "II.G",
+          "quote": "We will pay on your behalf breach response costs resulting from an actual or suspected security failure or data breach first discovered by you during the policy period."
+        },
+        {
+          "section_id": "IX.Breach response costs",
+          "quote": "costs to notify individuals affected or reasonably believed to be affected by such data breach, including printing costs, publishing costs, postage expenses, call center costs"
+        },
+        {
+          "section_id": "IX.Breach response costs",
+          "quote": "costs to provide up to two years (or longer if required by law) of a credit or identity monitoring program"
+        },
+        {
+          "section_id": "IX.Breach response costs",
+          "quote": "Breach response costs must be incurred within one year of your discovery of an actual or suspected security failure or data breach."
+        },
+        {
+          "section_id": "DEC.Item5",
+          "quote": "G. BREACH RESPONSE COSTS | Limit: $1,000,000 | Retention: $2,500"
+        }
+      ],
+      "in_policy_not_on_quote": false,
+      "cpl_message": null,
+      "reason": null
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": true,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": true
+    },
+    "passed": true,
+    "cost_usd": 0.014312,
+    "latency_s": 3.39,
+    "attempts": 1
+  },
+  {
+    "id": "q05",
+    "answer": {
+      "answerable": true,
+      "answer": "Yes. Under Network and Information Security Liability, the policy pays claim expenses and damages if a claim is made against Icon Dental for a security failure, data breach, or privacy liability, and the insurer has the right and duty to defend a claim seeking damages payable under the policy. The quote shows a $1,000,000 limit and a $2,500 retention for this coverage, and defense costs erode the limit. The claim must be first made and reported during the policy period, the event must be after the retroactive date, and exclusions such as prior knowledge or the wrongful collection exclusion could limit it, so the agent should confirm those facts.",
+      "citations": [
+        {
+          "section_id": "II.A",
+          "quote": "We will pay on your behalf claim expenses and damages that you become legally obligated to pay resulting from a claim against you"
+        },
+        {
+          "section_id": "V.Defense",
+          "quote": "We will have the right and duty to defend"
+        },
+        {
+          "section_id": "V.Defense",
+          "quote": "The Limits of Liability of this Policy will be reduced and may be completely exhausted by payment of claim expenses."
+        },
+        {
+          "section_id": "DEC.Item5",
+          "quote": "A. NETWORK AND INFORMATION SECURITY LIABILITY | Limit: $1,000,000 | Retention: $2,500"
+        }
+      ],
+      "in_policy_not_on_quote": false,
+      "cpl_message": null,
+      "reason": null
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": true,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": true
+    },
+    "passed": true,
+    "cost_usd": 0.013586,
+    "latency_s": 3.48,
+    "attempts": 1
+  },
+  {
+    "id": "q06",
+    "answer": {
+      "answerable": true,
+      "answer": "Generally no. The Natural Disaster exclusion removes coverage for any physical event or natural disaster, including flood, so a flooded server room would not be covered under the first-party or liability coverages. The form also excludes damage to tangible property such as computer hardware rendered unusable, except under Computer Replacement and Bricking, which only responds to a security failure (a cyber event), not a flood. The agent should confirm with the client that they understand physical damage to equipment needs separate property or equipment coverage.",
+      "citations": [
+        {
+          "section_id": "III.L",
+          "quote": "Any physical event or natural disaster, including but not limited to fire, flood, earthquake, volcanic eruption, explosion, lightning, wind, hail, tidal wave, and landslide."
+        },
+        {
+          "section_id": "III.R",
+          "quote": "Any injury or damage to, destruction, impairment, or loss of use of any tangible property, including any computer hardware rendered unusable by a security failure or systems failure"
+        },
+        {
+          "section_id": "II.M",
+          "quote": "We will pay on your behalf computer replacement costs that you incur resulting from a security failure first discovered by you during the policy period."
+        }
+      ],
+      "in_policy_not_on_quote": false,
+      "cpl_message": null,
+      "reason": null
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": true,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": true
+    },
+    "passed": true,
+    "cost_usd": 0.013138,
+    "latency_s": 3.63,
+    "attempts": 1
+  },
+  {
+    "id": "q07",
+    "answer": {
+      "answerable": true,
+      "answer": "Generally no. The policy excludes electrical or mechanical failure or interruption of a utility, including outages, so a power company outage on its own is not covered. The only exception is business interruption coverage (II.J) where the loss arises directly from a service provider experiencing its own security failure, which a plain power outage would not be. Even for covered interruptions, the 8-hour waiting period applies (1 hour only for DDoS with a panel mitigation vendor), so confirm the cause of the outage with the client.",
+      "citations": [
+        {
+          "section_id": "III.S",
+          "quote": "Electrical, mechanical failure, or interruption (including blackouts, brownouts, power surge, or outage) of a utility or other third party"
+        },
+        {
+          "section_id": "III.S",
+          "quote": "where such loss arises directly from a service provider directly experiencing their own security failure"
+        }
+      ],
+      "in_policy_not_on_quote": false,
+      "cpl_message": null,
+      "reason": null
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": true,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": true
+    },
+    "passed": true,
+    "cost_usd": 0.012132,
+    "latency_s": 2.64,
+    "attempts": 1
+  },
+  {
+    "id": "q08",
+    "answer": {
+      "answerable": true,
+      "answer": "Yes, potentially. Computer Replacement and Bricking (II.M) pays reasonable and necessary costs to restore or replace hardware owned or leased by the client that is impacted by a loss of firmware integrity from a security failure, and this quote shows a $1,000,000 limit with a $2,500 retention. The tangible property exclusion has an exception for this coverage, so bricked hardware is not excluded here. The agent should confirm the malware caused a loss of firmware integrity, that the laptops are business-owned or leased (not employee-owned and unused for business), and that the carrier gives written consent before replacement costs are incurred.",
+      "citations": [
+        {
+          "section_id": "II.M",
+          "quote": "We will pay on your behalf computer replacement costs that you incur resulting from a security failure first discovered by you during the policy period."
+        },
+        {
+          "section_id": "IX.Computer replacement costs",
+          "quote": "to restore or replace computer hardware or tangible equipment owned or leased by you impacted by a loss of firmware integrity resulting from a security failure"
+        },
+        {
+          "section_id": "III.R",
+          "quote": "except this exclusion will not apply to coverage afforded under Section II.M, COMPUTER REPLACEMENT AND BRICKING"
+        },
+        {
+          "section_id": "DEC.Item5",
+          "quote": "M. COMPUTER REPLACEMENT AND BRICKING | Limit: $1,000,000 | Retention: $2,500"
+        }
+      ],
+      "in_policy_not_on_quote": false,
+      "cpl_message": null,
+      "reason": null
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": true,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": false
+    },
+    "passed": false,
+    "cost_usd": 0.01413,
+    "latency_s": 3.7,
+    "attempts": 1
+  },
+  {
+    "id": "q09",
+    "answer": {
+      "answerable": true,
+      "answer": "It depends on whether the phone is used for the practice's business. The definition of security failure excludes computers, peripherals, or mobile devices owned or leased by an employee and not used for the business operations of the named insured or subsidiary. So a hack of a purely personal phone is not a security failure. If the employee uses the phone for practice business (for example email or scheduling), the device may fall within the policy's computer systems definition, which includes mobile devices. The agent should confirm how the phone is used and whether any resulting incident involves the practice's systems or data.",
+      "citations": [
+        {
+          "section_id": "IX.Security failure",
+          "quote": "Security failure does not mean and will not include any failure of computers, related peripheral components, or mobile devices that are owned or leased by an employee"
+        },
+        {
+          "section_id": "IX.Computer systems",
+          "quote": "mobile devices (handheld and other wireless computing devices)"
+        }
+      ],
+      "in_policy_not_on_quote": false,
+      "cpl_message": null,
+      "reason": null
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": true,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": true
+    },
+    "passed": true,
+    "cost_usd": 0.012282,
+    "latency_s": 3.31,
+    "attempts": 1
+  },
+  {
+    "id": "q10",
+    "answer": {
+      "answerable": true,
+      "answer": "The form covers this under Impersonation Repair Costs (II.S), which applies to impersonation fraud, defined to include fraudulent websites designed to impersonate the client. However, DEC.Item5 shows Item S as N/A, so this coverage is in the form but not on this quote. It would only apply if added. Also note the definition excludes fraud that arises from a security failure, so that fact would need to be confirmed.",
+      "citations": [
+        {
+          "section_id": "II.S",
+          "quote": "We will pay on your behalf impersonation repair costs that you incur resulting from an impersonation fraud first discovered by you during the policy period."
+        },
+        {
+          "section_id": "IX.Impersonation fraud",
+          "quote": "means fraudulent electronic communications or websites designed to impersonate you or any of your products"
+        },
+        {
+          "section_id": "DEC.Item5",
+          "quote": "S. IMPERSONATION REPAIR COSTS | Limit: N/A | Retention: N/A"
+        }
+      ],
+      "in_policy_not_on_quote": true,
+      "cpl_message": null,
+      "reason": null
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": true,
+      "routing": true,
+      "quote_awareness": true,
+      "no_invented": true,
+      "key_facts": true
+    },
+    "passed": true,
+    "cost_usd": 0.01254,
+    "latency_s": 2.96,
+    "attempts": 1
+  },
+  {
+    "id": "q11",
+    "answer": {
+      "answerable": false,
+      "answer": null,
+      "citations": [],
+      "in_policy_not_on_quote": false,
+      "cpl_message": "Hi CPL team, I'm working on the December cyber renewal for Icon Dental, a 10-25 employee dental office in the Denver area, CO, with $1M-$3M revenue, quoted on the Coalition sample form. Question: does the client need multi-factor authentication (MFA) to be offered or to bind this policy? Please check Coalition's current underwriting requirements for MFA and whether it affects eligibility, terms or pricing for a dental practice. Thanks, Sam Rivera",
+      "reason": "Underwriting requirements such as MFA are not set out in the policy wording, so the policy text cannot settle whether MFA is needed to obtain coverage."
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": null,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": null
+    },
+    "passed": true,
+    "cost_usd": 0.011642,
+    "latency_s": 2.4,
+    "attempts": 1
+  },
+  {
+    "id": "q12",
+    "answer": {
+      "answerable": false,
+      "answer": null,
+      "citations": [],
+      "in_policy_not_on_quote": false,
+      "cpl_message": "Hi, I'm working with Sam Rivera on the December cyber renewal for Icon Dental, a dental office in the Denver area, CO, with 10-25 employees and $1M-$3M revenue. The client is comparing the Recommended option ($1M aggregate limit, $250K funds transfer sublimit, $2,500 retention) with the Higher limit option ($2M aggregate limit, $250K funds transfer sublimit, $2,500 retention). Could you confirm the premium difference between the two, and whether the Higher limit option carries any underwriting requirements or differences in availability in CO?",
+      "reason": "Premium pricing is not stated in the policy form, so it can't settle what a $2M limit would cost; this must go to a CPL."
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": null,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": null
+    },
+    "passed": true,
+    "cost_usd": 0.011892,
+    "latency_s": 2.68,
+    "attempts": 1
+  },
+  {
+    "id": "q13",
+    "answer": {
+      "answerable": false,
+      "answer": null,
+      "citations": [],
+      "in_policy_not_on_quote": false,
+      "cpl_message": "Hi CPL team, I'm working on the December cyber renewal for Icon Dental, a 10-25 employee dental office in the Denver area, CO, with $1M-$3M revenue. They hold patient records, insurance details and payment cards, and rely on practice management software, digital imaging and email. The client asks whether the Coalition cyber quote (Basic, Recommended or Higher limit) is better than the cyber coverage already in their business owner's policy (BOP). Could you compare the two? I'd like to know what cyber coverage the BOP provides, including limits, retentions and any exclusions, and how it would interact with this policy's Other Insurance clause. Please send me the BOP's cyber wording or tell me what you need from me to review it.",
+      "reason": "The policy text covers only this Coalition form and says nothing about the client's business owner's policy, so it can't settle a comparison with other coverage."
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": null,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": null
+    },
+    "passed": true,
+    "cost_usd": 0.012378,
+    "latency_s": 3.29,
+    "attempts": 1
+  },
+  {
+    "id": "q14",
+    "answer": {
+      "answerable": false,
+      "answer": null,
+      "citations": [],
+      "in_policy_not_on_quote": false,
+      "cpl_message": "Hi CPL, I'm working on the December renewal for Icon Dental (dental office, Denver area, CO, 10-25 employees, $1M-$3M revenue). The client asked how fast Coalition pays out a ransomware claim. The form text covers what is paid (Ransomware and Cyber Extortion, II.I) but sets no payment timeline. Could you check what Coalition's claim handling and payout timing looks like for ransomware, and whether there is anything I can share with the client?",
+      "reason": "The policy text defines what ransomware and cyber extortion cover but sets no deadline or timeline for paying a claim, so claim payment speed can't be settled from the form."
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": null,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": null
+    },
+    "passed": true,
+    "cost_usd": 0.011652,
+    "latency_s": 2.95,
+    "attempts": 1
+  },
+  {
+    "id": "q15",
+    "answer": {
+      "answerable": false,
+      "answer": null,
+      "citations": [],
+      "in_policy_not_on_quote": false,
+      "cpl_message": "Hi CPL team, I'm working on the December renewal for Icon Dental, a dental practice (10-25 employees, $1M-$3M revenue) based in the Denver, CO area. A question came up about writing the Coalition (sample form) cyber policy for a client in New York. Can you confirm whether the policy is available and can be issued in New York, and whether any state-specific terms, endorsements or filing requirements apply? Please also confirm whether this applies to Icon Dental, as their listed state is Colorado, or whether we would be placing this for a separate New York client or location.",
+      "reason": "State availability is not set by the policy wording; the form only says the Territory is the universe and does not say where the carrier can write or issue it, so a CPL must confirm."
+    },
+    "report": {
+      "rerouted": false,
+      "rejected_citations": []
+    },
+    "error": null,
+    "metrics": {
+      "citations": null,
+      "routing": true,
+      "quote_awareness": null,
+      "no_invented": true,
+      "key_facts": null
+    },
+    "passed": true,
+    "cost_usd": 0.011868,
+    "latency_s": 3.05,
+    "attempts": 1
+  }
+]

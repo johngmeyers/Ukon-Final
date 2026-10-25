@@ -181,6 +181,7 @@ Deterministic, no AI. This is the guardrail to show in the demo.
 For each citation:
 1. `section_id` exists in `specimen_sections.json`.
 2. `quote` appears in that section's text after normalizing whitespace, case and hyphenation.
+3. If not, but the quote appears verbatim in exactly one other section, the citation is relabeled to that section (logged), since it is real policy text with the wrong label.
 
 Then:
 - A point or objection whose citations all fail is **removed** from the brief, and the UI shows "1 claim removed: citation didn't match the policy."
@@ -219,7 +220,7 @@ Reads `evals/golden_set.yaml`, runs each question through `qa.py` for one client
 | Correct routing | `answerable` matches `expected` (answer vs. route_to_cpl) |
 | Quote awareness | For questions marked `on_quote: false`, the answer flags `in_policy_not_on_quote` |
 | No invented coverage | No `must_not_claim` phrase appears in the answer |
-| Key facts | Each `must_include` fact appears (case-insensitive, numbers normalized) |
+| Key facts | Each `must_include` fact appears (case-insensitive, numbers normalized); a fact the wording misses is judged by meaning by a grader model (`JUDGE_MODEL` in `config.py`), with each decision and its evidence listed in the results |
 
 Write `evals/results.md` with a per-question table and totals. Run it 3 times and report the pass rate, since outputs vary. Keep one honest failure, plus what fixed it, for the presentation.
 

@@ -14,6 +14,11 @@ PRICE_OUTPUT_PER_TOKEN = 10.00 / 1_000_000
 PRICE_CACHE_WRITE_PER_TOKEN = 2.50 / 1_000_000
 PRICE_CACHE_READ_PER_TOKEN = 0.20 / 1_000_000
 
+# Eval grader for key facts (evals only). Haiku 5.5: $0.10 / $0.50 per million.
+JUDGE_MODEL = "claude-haiku-5-5"
+JUDGE_PRICE_INPUT_PER_TOKEN = 0.10 / 1_000_000
+JUDGE_PRICE_OUTPUT_PER_TOKEN = 0.50 / 1_000_000
+
 # Paths
 DATA_DIR = ROOT / "data"
 SPECIMEN_PDF = DATA_DIR / "specimen.pdf"

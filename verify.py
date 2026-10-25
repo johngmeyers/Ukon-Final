@@ -2,6 +2,8 @@
 
 A citation passes if its section_id exists and its quote appears in that
 section's text after normalizing whitespace, case, quotes and hyphenation.
+If the quote is real policy text but labelled with the wrong section (it appears
+in exactly one other section), the citation is relabelled to that section.
 """
 import csv
 import re
@@ -42,53 +44,69 @@ def normalize(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def _quote_key(c: Citation) -> str:
+    return normalize(c.quote).strip(" \"'.,;:")
+
+
 def check_citation(c: Citation) -> str | None:
     """Return None if the citation passes, else the reason it failed."""
     section = specimen.by_id().get(c.section_id)
     if section is None:
         return "unknown section_id"
-    quote = normalize(c.quote).strip(" \"'.,;:")
+    quote = _quote_key(c)
     if not quote or quote not in normalize(section["text"]):
         return "quote not found in section"
     return None
 
 
-def _filter(citations, location, rejected):
+def sections_containing(c: Citation) -> list[str]:
+    quote = _quote_key(c)
+    return [s["id"] for s in specimen.sections() if quote and quote in normalize(s["text"])]
+
+
+def _filter(citations, location, rejected, relabeled):
     passing = []
     for c in citations:
         reason = check_citation(c)
-        if reason:
-            rejected.append({"location": location, "section_id": c.section_id, "quote": c.quote, "reason": reason})
-        else:
+        if not reason:
             passing.append(c)
+            continue
+        found = sections_containing(c)
+        if len(found) == 1:
+            # Real policy text with the wrong label: fix the label rather than drop it.
+            relabeled.append({"location": location, "section_id": c.section_id, "quote": c.quote,
+                              "reason": f"relabeled to {found[0]}"})
+            passing.append(c.model_copy(update={"section_id": found[0]}))
+        else:
+            rejected.append({"location": location, "section_id": c.section_id, "quote": c.quote, "reason": reason})
     return passing
 
 
 def verify_brief(brief, client_id: str):
     """Drop failed citations; remove any point or objection whose citations all failed.
 
-    Returns (verified brief copy, report) where report has "removed_claims" and
-    "rejected_citations".
+    Returns (verified brief copy, report) where report has "removed_claims",
+    "rejected_citations" and "relabeled_citations".
     """
-    rejected, removed = [], []
+    rejected, relabeled, removed = [], [], []
     points = []
     for i, p in enumerate(brief.talking_points, 1):
-        passing = _filter(p.citations, f"talking_points[{i}]", rejected)
+        passing = _filter(p.citations, f"talking_points[{i}]", rejected, relabeled)
         if p.citations and not passing:
             removed.append({"location": f"talking_points[{i}]", "text": p.text})
         else:
             points.append(p.model_copy(update={"citations": passing}))
     objections = []
     for i, o in enumerate(brief.objections, 1):
-        passing = _filter(o.citations, f"objections[{i}]", rejected)
+        passing = _filter(o.citations, f"objections[{i}]", rejected, relabeled)
         if o.citations and not passing:
             removed.append({"location": f"objections[{i}]", "text": o.objection})
         else:
             objections.append(o.model_copy(update={"citations": passing}))
 
-    _log_failures("brief", client_id, "", rejected)
+    _log_failures("brief", client_id, "", rejected + relabeled)
     verified = brief.model_copy(update={"talking_points": points, "objections": objections})
-    return verified, {"removed_claims": removed, "rejected_citations": rejected}
+    return verified, {"removed_claims": removed, "rejected_citations": rejected, "relabeled_citations": relabeled}
 
 
 def verify_answer(answer, question: str, client_id: str):
@@ -96,9 +114,9 @@ def verify_answer(answer, question: str, client_id: str):
 
     Returns (verified answer copy, report).
     """
-    rejected = []
-    passing = _filter(answer.citations, "answer", rejected)
-    _log_failures("qa", client_id, question, rejected)
+    rejected, relabeled = [], []
+    passing = _filter(answer.citations, "answer", rejected, relabeled)
+    _log_failures("qa", client_id, question, rejected + relabeled)
     rerouted = answer.answerable and not passing
     if rerouted:
         answer = answer.model_copy(update={
@@ -114,7 +132,7 @@ def verify_answer(answer, question: str, client_id: str):
         })
     else:
         answer = answer.model_copy(update={"citations": passing})
-    return answer, {"rerouted": rerouted, "rejected_citations": rejected}
+    return answer, {"rerouted": rerouted, "rejected_citations": rejected, "relabeled_citations": relabeled}
 
 
 def _log_failures(kind, client_id, question, rejected):
