@@ -1,0 +1,94 @@
+{
+  "model": "claude-sonnet-5-5",
+  "saved_at": "2026-10-25T15:19:58+00:00",
+  "brief": {
+    "why_it_matters": "A preschool holds children's health and allergy records plus parents' payment details, so a breach hits trust fast in a small community. Fake tuition payment emails and locked billing records at semester start are realistic risks for a school this size.",
+    "opener": "Hi, it's Sam. Your cyber policy renews in March and I want to walk you through the Recommended option at {MONTHLY_PRICE}, especially how it fits a school that holds children's records and takes tuition payments by email.",
+    "talking_points": [
+      {
+        "text": "If enrollment records are breached, the policy pays breach response costs such as forensics, family notification and legal advice. The Recommended option shows a $1,000,000 limit and a $2,500 retention.",
+        "citations": [
+          {
+            "section_id": "II.G",
+            "quote": "We will pay on your behalf breach response costs resulting from an actual or suspected security failure or data breach"
+          },
+          {
+            "section_id": "DEC.Item5",
+            "quote": "G. BREACH RESPONSE COSTS | Limit: $1,000,000 | Retention: $2,500"
+          }
+        ]
+      },
+      {
+        "text": "If a hacked email account sends parents fake payment instructions, funds transfer fraud and social engineering coverage applies. The Recommended option has a $250,000 limit, versus $100,000 on Basic.",
+        "citations": [
+          {
+            "section_id": "II.Q",
+            "quote": "We will pay funds transfer loss that you incur resulting from a funds transfer fraud first discovered by you during the policy period."
+          },
+          {
+            "section_id": "DEC.Item5",
+            "quote": "Q. FUNDS TRANSFER FRAUD AND SOCIAL ENGINEERING | Limit: $250,000 | Retention: $2,500"
+          }
+        ]
+      },
+      {
+        "text": "If ransomware locks billing and family records, the policy covers cyber extortion expenses. It also covers lost income and extra costs while systems are down, after an 8 hour waiting period.",
+        "citations": [
+          {
+            "section_id": "II.I",
+            "quote": "We will pay on your behalf cyber extortion expenses resulting from cyber extortion first discovered by you during the policy period."
+          },
+          {
+            "section_id": "DEC.Item5",
+            "quote": "i. Waiting period: 8 hours"
+          }
+        ]
+      }
+    ],
+    "objections": [
+      {
+        "objection": "We're too small to be a target.",
+        "response": "Small schools hold children's records and payment details, and attackers often go after easy targets. Fake tuition emails don't need a big organization. If it happens, response costs fall on the school.",
+        "citations": [
+          {
+            "section_id": "IX.Data breach",
+            "quote": "the acquisition, access, theft, or disclosure of personally identifiable information or third party corporate information in a manner that is unauthorized by you"
+          }
+        ]
+      },
+      {
+        "objection": "My IT person handles security.",
+        "response": "Good, but even strong security can't guarantee nothing goes wrong. This policy pays for the response if a failure happens, and it can use forensic help to find the cause.",
+        "citations": [
+          {
+            "section_id": "IX.Security failure",
+            "quote": "access to or use of computer systems in a manner that is not authorized by you, including when resulting from the theft of a password"
+          }
+        ]
+      },
+      {
+        "objection": "Isn't this already in my business policy?",
+        "response": "I can't say what your other policies include, so let's check them together. This policy is written for cyber events. It applies on top of other valid insurance, except breach response, which is primary.",
+        "citations": [
+          {
+            "section_id": "VIII.Other insurance",
+            "quote": "this Policy will apply excess of any other valid and collectible insurance available to you"
+          }
+        ]
+      }
+    ]
+  },
+  "report": {
+    "removed_claims": [],
+    "rejected_citations": []
+  },
+  "stats": {
+    "attempts": 1,
+    "input_tokens": 1354,
+    "cache_write_tokens": 0,
+    "cache_read_tokens": 31567,
+    "output_tokens": 1135,
+    "cost_usd": 0.020371,
+    "latency_s": 8.26
+  }
+}
