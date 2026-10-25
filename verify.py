@@ -28,10 +28,12 @@ class Citation(BaseModel):
     @field_validator("quote")
     @classmethod
     def quote_length(cls, v: str) -> str:
-        n = len(v.split())
-        if not 5 <= n <= 30:
-            raise ValueError(f"quote must be 5-30 words, got {n}")
-        return v
+        words = v.split()
+        if len(words) < 5:
+            raise ValueError(f"quote must be 5-30 words, got {len(words)}")
+        # Trim rather than reject: the first 30 words of a verbatim quote are still
+        # verbatim, so the verifier can check them and a good answer isn't thrown away.
+        return " ".join(words[:30]) if len(words) > 30 else v
 
 
 def normalize(text: str) -> str:

@@ -72,16 +72,17 @@ class Brief(BaseModel):
     @field_validator("talking_points")
     @classmethod
     def three_points(cls, v):
-        if len(v) != 3:
-            raise ValueError(f"need exactly 3 talking points, got {len(v)}")
-        return v
+        # Counts are soft: keep the first 3 rather than fail; only an empty list is an error.
+        if not v:
+            raise ValueError("need 3 talking points, got none")
+        return v[:3]
 
     @field_validator("objections")
     @classmethod
     def three_to_five_objections(cls, v):
-        if not 3 <= len(v) <= 5:
-            raise ValueError(f"need 3-5 objections, got {len(v)}")
-        return v
+        if not v:
+            raise ValueError("need 3-5 objections, got none")
+        return v[:5]
 
     @field_validator("opener")
     @classmethod

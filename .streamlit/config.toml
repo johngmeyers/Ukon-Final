@@ -1,0 +1,10 @@
+# Light webmail look for the email-view prototype.
+[theme]
+base = "light"
+primaryColor = "#0b57d0"
+backgroundColor = "#f6f8fc"
+secondaryBackgroundColor = "#eaf1fb"
+textColor = "#1f1f1f"
+
+[client]
+toolbarMode = "minimal"
