@@ -1,0 +1,890 @@
+[
+  {
+    "id": "DEC.Item4",
+    "title": "Limits of Liability",
+    "page": 1,
+    "text": "Item 4. Aggregate Policy Limit of Liability $1,000,000\nPer Event Limit of Liability $1,000,000"
+  },
+  {
+    "id": "DEC.Item5",
+    "title": "Insuring Agreement(s) purchased, Limits of Liability, and Retentions",
+    "page": 1,
+    "text": "Item 5. Insuring Agreement(s) purchased, Limits of Liability, and Retentions\nCoverage under this Policy is provided only for those Insuring Agreements for which a limit of liability appears below. If no limit of liability is shown for an Insuring Agreement, such Insuring Agreement is not provided by this Policy. The Aggregate Policy Limit of Liability shown above is the most the Insurer(s) will pay under this Policy regardless of the number of Insuring Agreements purchased.\nIn the event that you elect to use Coalition Incident Response to provide computer forensic professional services, and Coalition Incident Response is available to provide such services, then any fees, costs and expenses of Coalition Incident Response for computer forensic professional services that result in covered breach response costs, claim expenses, cyber extortion expenses, or restoration costs, under the terms and conditions of this Policy will not be subject to any Retention.\n\nTHIRD PARTY LIABILITY COVERAGES\n\nTHIRD PARTY SECURITY AND PRIVACY\nA. NETWORK AND INFORMATION SECURITY LIABILITY | Limit: $1,000,000 | Retention: $2,500\nB. REGULATORY DEFENSE AND PENALTIES | Limit: $1,000,000 | Retention: $2,500\nC. PCI FINES AND ASSESSMENTS | Limit: $1,000,000 | Retention: $2,500\nD. FUNDS TRANSFER LIABILITY | Limit: N/A | Retention: N/A\n\nMEDIA\nE. MULTIMEDIA CONTENT LIABILITY | Limit: $1,000,000 | Retention: $2,500\n\nFIRST PARTY COVERAGES\n\nEVENT RESPONSE\nF. BREACH RESPONSE SERVICES | Limit: Available for 72 hours following notification to the Breach Response Services Advisor | Retention: $0\nG. BREACH RESPONSE COSTS | Limit: $1,000,000 | Retention: $2,500\nNote: If this box has been checked, then an Optional Additional Limit of Liability for Breach Response Costs has been purchased. Such Optional Additional Limit of Liability for Breach Response Costs, if purchased, is in addition to the Aggregate Policy Limit of Liability. If the box is unchecked, then Breach Response Costs are subject to the Aggregate Policy Limit of Liability.\nH. CRISIS MANAGEMENT AND PUBLIC RELATIONS | Limit: $1,000,000 | Retention: $2,500\nI. RANSOMWARE AND CYBER EXTORTION | Limit: $1,000,000 | Retention: $2,500\nJ. DIRECT AND CONTINGENT BUSINESS INTERRUPTION, AND EXTRA EXPENSES FROM SECURITY FAILURE AND SYSTEMS FAILURE | Limit: $1,000,000 | Retention: $2,500 | i. Waiting period: 8 hours | ii. Enhanced waiting period: 1 hour\nK. PROOF OF LOSS PREPARATION EXPENSES | Limit: N/A | Retention: N/A\nL. DIGITAL ASSET RESTORATION | Limit: $1,000,000 | Retention: $2,500\nM. COMPUTER REPLACEMENT AND BRICKING | Limit: $1,000,000 | Retention: $2,500\nN. REPUTATIONAL HARM LOSS | Limit: $1,000,000 | Reputation waiting period: 14 days\nO. COURT ATTENDANCE | Limit: i. Per day/per person limit: $250; ii. Limit: N/A\nP. CRIMINAL REWARD | Limit: N/A | Retention: N/A\n\nCYBER CRIME\nQ. FUNDS TRANSFER FRAUD AND SOCIAL ENGINEERING | Limit: $250,000 | Retention: $2,500\nR. SERVICE FRAUD INCLUDING CRYPTOJACKING | Limit: $100,000 | Retention: $2,500\nS. IMPERSONATION REPAIR COSTS | Limit: N/A | Retention: N/A\nT. INVOICE MANIPULATION | Limit: N/A | Retention: N/A"
+  },
+  {
+    "id": "DEC.Item6",
+    "title": "Pre-Claim Assistance",
+    "page": 3,
+    "text": "Item 6. Pre-Claim Assistance $700"
+  },
+  {
+    "id": "DEC.Item8",
+    "title": "Notification of incidents, claims, or potential claims",
+    "page": 3,
+    "text": "Item 8. Notification of incidents, claims, or potential claims\nBy Email\nAttn: Coalition Claims\nclaims@coalitioninc.com\nBy Phone\n1.833.866.1337\nBy Mail\nAttn: Coalition Claims\n55 2nd St, Suite 2500\nSan Francisco, CA 94105"
+  },
+  {
+    "id": "I.Introduction",
+    "title": "Introduction",
+    "page": 1,
+    "text": "This Policy is a contract of insurance between the named insured and us. This Policy includes and must be read together with the Declarations page and any Endorsements.\nThe insurance provided under this Policy for claims made against you, under Section II, THIRD PARTY LIABILITY COVERAGES, is on a claims made and reported basis, and applies to claims only if they are first made against you during the policy period (or any applicable Optional Extended Reporting Period) and reported to us in accordance with the terms of this Policy. Claim expenses reduce the applicable Limits of Liability, are subject to retentions, and may exhaust the applicable Limits of Liability.\nPlease note that the terms in bold lower case print are defined terms and have special meaning as set forth in Section IX, DEFINITIONS."
+  },
+  {
+    "id": "II",
+    "title": "What We Cover – Our Insuring Agreements",
+    "page": 1,
+    "text": "In consideration of the named insured's payment of the premium, in reliance upon the information provided to us, including in and with the application, and subject to the Limits of Liability and applicable Retention(s), exclusions, conditions, and other terms of this Policy, we agree to provide the following insurance coverage provided that:\n1. The event first took place after the retroactive date and before the end of the policy period; 2. For the THIRD PARTY LIABILITY COVERAGES, the claim is made against you during the policy period (or any applicable Optional Extended Reporting Period), and is reported to us during the policy period or any applicable extended reporting period; 3. For the FIRST PARTY COVERAGES, the incident is first discovered by you during the policy period, and reported to us during the policy period or any applicable extended reported period; and 4. Notice is provided in accordance with Section IV, YOUR OBLIGATIONS AS AN INSURED."
+  },
+  {
+    "id": "II.A",
+    "title": "Network and Information Security Liability",
+    "page": 1,
+    "text": "We will pay on your behalf claim expenses and damages that you become legally obligated to pay resulting from a claim against you for a security failure, data breach, or privacy liability."
+  },
+  {
+    "id": "II.B",
+    "title": "Regulatory Defense and Penalties",
+    "page": 1,
+    "text": "We will pay on your behalf claim expenses and regulatory penalties that you become legally obligated to pay resulting from a claim against you in the form of a regulatory proceeding."
+  },
+  {
+    "id": "II.C",
+    "title": "PCI Fines and Assessments",
+    "page": 1,
+    "text": "We will pay on your behalf claim expenses and PCI fines and assessments that you become legally obligated to pay resulting from a claim against you for a data breach compromising payment card data."
+  },
+  {
+    "id": "II.D",
+    "title": "Funds Transfer Liability",
+    "page": 2,
+    "text": "We will pay on your behalf claim expenses and funds transfer liability loss that you become legally obligated to pay resulting from a claim against you for a funds transfer liability."
+  },
+  {
+    "id": "II.E",
+    "title": "Multimedia Content Liability",
+    "page": 2,
+    "text": "We will pay on your behalf claim expenses and damages that you become legally obligated to pay resulting from a claim against you for a multimedia wrongful act."
+  },
+  {
+    "id": "II.F",
+    "title": "Breach Response Services",
+    "page": 2,
+    "text": "We will pay on your behalf breach response services resulting from an actual or suspected security failure, data breach, cyber extortion, funds transfer fraud, or impersonation fraud, first discovered by you during the policy period."
+  },
+  {
+    "id": "II.G",
+    "title": "Breach Response Costs",
+    "page": 2,
+    "text": "We will pay on your behalf breach response costs resulting from an actual or suspected security failure or data breach first discovered by you during the policy period."
+  },
+  {
+    "id": "II.H",
+    "title": "Crisis Management and Public Relations",
+    "page": 2,
+    "text": "We will pay on your behalf crisis management costs resulting from a public relations event first discovered by you during the policy period."
+  },
+  {
+    "id": "II.I",
+    "title": "Ransomware and Cyber Extortion",
+    "page": 2,
+    "text": "We will pay on your behalf cyber extortion expenses resulting from cyber extortion first discovered by you during the policy period."
+  },
+  {
+    "id": "II.J",
+    "title": "Direct and Contingent Business Interruption, and Extra Expenses from Security Failure and Systems Failure",
+    "page": 2,
+    "text": "We will pay:\n1. business interruption loss; 2. contingent business interruption loss; and 3. extra expenses,\nthat you incur during the indemnity period directly resulting from the partial or complete interruption of computer systems for a period longer than the waiting period caused by a security failure or systems failure first discovered by you during the policy period.\nThe period of time set forth in Item 5.J.ii. of the Declarations will be the waiting period for any interruption of computer systems caused by a denial of service attack where a DDoS mitigation vendor from our list of panel providers is utilized at the time of such denial of service attack.\nThe period of time set forth in Item 5.J.i. of the Declarations will be the waiting period for all other causes of interruption of computer systems, or where the interruption of computer systems is caused by a denial of service attack and a DDoS mitigation provider from our list of panel providers is not utilized at the time of such denial of service attack."
+  },
+  {
+    "id": "II.K",
+    "title": "Proof of Loss Preparation Expenses",
+    "page": 3,
+    "text": "We will pay on your behalf proof of loss preparation expenses."
+  },
+  {
+    "id": "II.L",
+    "title": "Digital Asset Restoration",
+    "page": 3,
+    "text": "We will pay on your behalf restoration costs that you incur because of the alteration, destruction, damage, theft, loss, or inability to access digital assets directly resulting from a security failure or systems failure first discovered by you during the policy period."
+  },
+  {
+    "id": "II.M",
+    "title": "Computer Replacement and Bricking",
+    "page": 3,
+    "text": "We will pay on your behalf computer replacement costs that you incur resulting from a security failure first discovered by you during the policy period."
+  },
+  {
+    "id": "II.N",
+    "title": "Reputational Harm Loss",
+    "page": 3,
+    "text": "We will pay reputational harm loss that you incur during the reputation indemnity period solely and directly resulting from an adverse publication first published during the policy period specifically concerning a security failure, data breach, cyber extortion, or privacy liability first discovered by you and reported to us during the policy period.\nThe reputation waiting period for any reputational harm loss will be the period of time set forth in Item 5.N. of the Declarations."
+  },
+  {
+    "id": "II.O",
+    "title": "Court Attendance",
+    "page": 3,
+    "text": "We will pay you court attendance costs set forth in Item 5.O.i. of the Declarations, subject to the maximum amount set forth in Item 5.O.ii. of the Declarations."
+  },
+  {
+    "id": "II.P",
+    "title": "Criminal Reward",
+    "page": 3,
+    "text": "We will pay on your behalf, in our discretion, criminal reward costs."
+  },
+  {
+    "id": "II.Q",
+    "title": "Funds Transfer Fraud and Social Engineering",
+    "page": 3,
+    "text": "We will pay funds transfer loss that you incur resulting from a funds transfer fraud first discovered by you during the policy period."
+  },
+  {
+    "id": "II.R",
+    "title": "Service Fraud Including Cryptojacking",
+    "page": 3,
+    "text": "We will pay on your behalf service fraud loss that you incur resulting from a security failure first discovered by you during the policy period."
+  },
+  {
+    "id": "II.S",
+    "title": "Impersonation Repair Costs",
+    "page": 3,
+    "text": "We will pay on your behalf impersonation repair costs that you incur resulting from an impersonation fraud first discovered by you during the policy period."
+  },
+  {
+    "id": "II.T",
+    "title": "Invoice Manipulation",
+    "page": 3,
+    "text": "We will pay you invoice manipulation loss that you incur resulting from any invoice manipulation first discovered by you during the policy period."
+  },
+  {
+    "id": "III",
+    "title": "Exclusions – What Is not Covered",
+    "page": 3,
+    "text": "This Policy does not apply to and we will not make any payment for any claim expenses, damages, funds transfer liability loss, loss, breach response costs, breach response services, regulatory penalties, PCI fines and assessments, or any other amounts directly or indirectly arising out of, resulting from, based upon, or attributable to:"
+  },
+  {
+    "id": "III.A",
+    "title": "Bodily Injury",
+    "page": 3,
+    "text": "Any physical injury, sickness, disease, mental anguish, emotional distress, or death of any person, provided, however, that this exclusion will not apply to any claim for mental anguish or emotional distress under Sections II.A, NETWORK AND INFORMATION SECURITY LIABILITY and II.E, MULTIMEDIA CONTENT LIABILITY."
+  },
+  {
+    "id": "III.B",
+    "title": "Confiscation",
+    "page": 4,
+    "text": "Confiscation, nationalization, requisition, destruction of, or damage to any property, computer systems, software, or electronic data by order of any governmental or public authority."
+  },
+  {
+    "id": "III.C",
+    "title": "Contractual Liability",
+    "page": 4,
+    "text": "Any contractual liability or obligation or any breach of contract or agreement either oral or written, provided, however, that this exclusion will not apply:\n1. with respect to the coverage provided by Section II.A, NETWORK AND INFORMATION SECURITY LIABILITY, and Section II.G, BREACH RESPONSE COSTS, to your obligations to maintain the confidentiality or security of personally identifiable information or third party corporate information; 2. with respect to the coverage provided by Section II.E, MULTIMEDIA CONTENT LIABILITY, to misappropriation of ideas under implied contract; 3. with respect to the coverage provided by Section II.C, PCI FINES AND ASSESSMENTS; or 4. to the extent you would have been liable in the absence of such contract or agreement."
+  },
+  {
+    "id": "III.D",
+    "title": "Discrimination",
+    "page": 4,
+    "text": "Any actual or alleged discrimination of any kind."
+  },
+  {
+    "id": "III.E",
+    "title": "Employment Practices",
+    "page": 4,
+    "text": "Any actual or alleged employer-employee relations, policies, practices, acts, or omissions (including any wrongful dismissal, discharge or termination, discrimination, harassment, retaliation or other employment-related claim). However, this exclusion will not apply to a claim by a current or former employee under Section II.A, NETWORK AND INFORMATION SECURITY LIABILITY or:\n1. breach response services provided under Section II.F, BREACH RESPONSE SERVICES; or 2. breach response costs provided under Section II.G, BREACH RESPONSE COSTS;\ninvolving a security failure, data breach, cyber extortion, funds transfer fraud, or impersonation fraud, as applicable to coverage Sections II.F and G, that impacts current or former employees."
+  },
+  {
+    "id": "III.F",
+    "title": "Fraud by a Senior Executive",
+    "page": 4,
+    "text": "Any dishonest, fraudulent, criminal, or malicious act or omission of any senior executive or carried out with the knowledge of any senior executive. However, this exclusion does not apply to claim expenses incurred in defending any such claim until and unless a final, non-appealable adjudication establishes that a senior executive committed or had knowledge of such dishonest, fraudulent, criminal, or malicious act or omission, at which time the named insured will reimburse us for all claim expenses we incurred or paid in defending such claim.\nThis exclusion will not apply to any natural person insured who did not participate in or otherwise be involved in the dishonest, fraudulent, criminal, or malicious act or omission."
+  },
+  {
+    "id": "III.G",
+    "title": "Governmental Orders",
+    "page": 5,
+    "text": "Any court order or demand: 1. requiring you to provide personally identifiable information to any domestic or foreign law enforcement, administrative, regulatory, or judicial body or other governmental authority. However, this exclusion will not apply to any claim expenses, damages, and regulatory penalties that you become legally obligated to pay resulting from your response to a regulatory proceeding. 2. requiring the shutdown of systems or services."
+  },
+  {
+    "id": "III.H",
+    "title": "Illegal Remuneration",
+    "page": 5,
+    "text": "Any profit, remuneration, or advantage to which you are not legally entitled. However, this exclusion does not apply to claim expenses incurred in defending any such claim until and unless a final, non-appealable adjudication establishes the gaining of any profit, remuneration, or advantage to which you are not legally entitled, at which time the named insured will reimburse us for all claim expenses we incurred or paid in defending such claim."
+  },
+  {
+    "id": "III.I",
+    "title": "Insured Versus Insured",
+    "page": 5,
+    "text": "Any claim made by or on behalf of:\n1. an insured under this Policy or by a stockholder or member in their capacity as such against an insured; however, this exclusion will not apply to an otherwise covered claim made by: a. an employee arising from a security failure or data breach; or b. an additional insured; 2. any business enterprise in which you have greater than a twenty percent (20%) ownership interest; or 3. any parent company or other entity that owns more than twenty percent (20%) of an insured."
+  },
+  {
+    "id": "III.J",
+    "title": "Intellectual Property",
+    "page": 5,
+    "text": "Any actual or alleged violation or infringement of any intellectual property right or obligation, including:\n1. infringement of copyright of software, firmware, or hardware; 2. distribution or sale of, or offer to distribute to sell, any goods, products, or services; 3. other use of any goods, products, or services that infringes or violates any intellectual property law or right relating to the appearance, design, or function of any goods, products, or services; or 4. misappropriation, misuse, infringement, or violation of any patent, patent right, or trade secret;\nhowever, this exclusion will not apply to Section II.E, MULTIMEDIA CONTENT LIABILITY, for an otherwise covered claim for a multimedia wrongful act, provided that, this exception to exclusion J. INTELLECTUAL PROPERTY will not apply to any actual or alleged violation or infringement of any intellectual property right or obligation described in items 1 and 4 above."
+  },
+  {
+    "id": "III.K",
+    "title": "Merchant Liability",
+    "page": 5,
+    "text": "Any charge back, interchange fee, discount fee, service related fee, rate, or charge; or liability or fee incurred by you due to a merchant service provider, payment processor, payment card company, or bank reversing or freezing payment transactions, except that this exclusion will not apply to coverage afforded under Section II.C, PCI FINES AND ASSESSMENTS."
+  },
+  {
+    "id": "III.L",
+    "title": "Natural Disaster",
+    "page": 5,
+    "text": "Any physical event or natural disaster, including but not limited to fire, flood, earthquake, volcanic eruption, explosion, lightning, wind, hail, tidal wave, and landslide."
+  },
+  {
+    "id": "III.M",
+    "title": "Nuclear",
+    "page": 6,
+    "text": "Any exposure or threatened exposure to any radioactive matter or any form of radiation or contamination by radioactivity of any kind or from any source, including any nuclear reaction, nuclear radiation, or radioactive contamination from any kind of nuclear fuels, waste or the combustion or ignition of nuclear fuel. This exclusion applies regardless of whether any other causes, events, materials, or products contributed concurrently or in any sequence to the claim or event, or the liability or legal obligation alleged or existing."
+  },
+  {
+    "id": "III.N",
+    "title": "Pollutants",
+    "page": 6,
+    "text": "Any:\n1. actual or alleged discharge, dispersal, seepage, migration, release, or escape of pollutants, or any threatened discharge, seepage, migration, release, or escape of pollutants; or 2. request, demand, order, or statutory or regulatory requirement that you or others detect, report, test for, monitor, clean up, remove, remediate, contain, treat, detoxify, or neutralize, or in any way respond to, or assess the effects of pollutants; including any claim, suit, notice, or proceeding by or on behalf of any governmental authority or quasi-governmental authority, a potentially responsible party or any other person or entity for any amounts whatsoever because of detecting, reporting, testing for, monitoring, cleaning up, removing, remediating, containing, treating, detoxifying, or neutralizing, or in any way responding to, or assessing the effects of pollutants.\nThis exclusion applies regardless of whether any other causes, events, materials, or products contributed concurrently or in any sequence to the claim or event, or the liability or legal obligation alleged or existing."
+  },
+  {
+    "id": "III.O",
+    "title": "Prior Knowledge",
+    "page": 6,
+    "text": "1. any event, act, error, or omission that any senior executive on or before the continuity date knew or could have reasonably foreseen might be the basis of a claim, loss, breach response costs, or breach response services under this Policy; or 2. any claim, event, or circumstance which has been the subject of any notice given to the insurer of any other policy in force prior to the inception date of this Policy."
+  },
+  {
+    "id": "III.P",
+    "title": "Retroactive Date",
+    "page": 6,
+    "text": "Any event, act, error, or omission that took place prior to the retroactive date, or any related or continuing acts, errors, omissions, or events where the first such act, error, omission, or event first took place prior to the retroactive date."
+  },
+  {
+    "id": "III.Q",
+    "title": "Securities",
+    "page": 6,
+    "text": "The actual or alleged ownership, sale or purchase of, or the offer to sell or purchase stock or other securities."
+  },
+  {
+    "id": "III.R",
+    "title": "Tangible Property",
+    "page": 6,
+    "text": "Any injury or damage to, destruction, impairment, or loss of use of any tangible property, including any computer hardware rendered unusable by a security failure or systems failure, except this exclusion will not apply to coverage afforded under Section II.M, COMPUTER REPLACEMENT AND BRICKING."
+  },
+  {
+    "id": "III.S",
+    "title": "Third Party Mechanical Failure",
+    "page": 7,
+    "text": "Electrical, mechanical failure, or interruption (including blackouts, brownouts, power surge, or outage) of a utility or other third party, including telecommunications and other communications, GPS infrastructure, any core element of the internet or internet service, website hosts, server services, satellite, cable, electricity, gas, water, or other utility or power service providers. However, this exclusion will not apply to coverage under Section II.J, DIRECT AND CONTINGENT BUSINESS INTERRUPTION, AND EXTRA EXPENSES FROM SECURITY FAILURE AND SYSTEMS FAILURE, where such loss arises directly from a service provider directly experiencing their own security failure."
+  },
+  {
+    "id": "III.T",
+    "title": "Unfair Trade Practice",
+    "page": 7,
+    "text": "Any actual or alleged false, unlawful, deceptive, anti-competitive or unfair trade practices; however, this exclusion does not apply to a claim under Section II.B, REGULATORY DEFENSE AND PENALTIES arising from a security failure or data breach."
+  },
+  {
+    "id": "III.U",
+    "title": "Violation of Acts/Laws",
+    "page": 7,
+    "text": "Any actual or alleged violation of:\n1. the Employee Retirement Income Security Act of 1974 (ERISA); 2. the Securities Act of 1933, the Securities Exchange Act of 1934, the Investment Act of 1940, or any other federal or state securities laws; 3. the Organized Crime Control Act of 1970 (RICO); 4. the Controlling the Assault of Non-Solicited Pornography and Marketing Act of 2003 (CAN-SPAM); 5. Telephone Consumer Protection Act (TCPA); 6. the Sherman Anti-Trust Act, the Clayton Act, or any price fixing, restraint of trade, or monopolization statutes; or 7. any similar local, state, federal, common, or foreign laws or legislation to the laws described in 1. through 6. above;\nhowever, this exclusion will not apply to a claim against you alleging a data breach or privacy liability in violation of the Securities and Exchange Commission (SEC) regulation S-P (17 C.F.R. § 248)."
+  },
+  {
+    "id": "III.V",
+    "title": "War and Terrorism",
+    "page": 7,
+    "text": "War, invasion, acts of foreign enemies, terrorism, hostilities, warlike operations (whether war be declared or not), civil war, rebellion, revolutions, insurrection, military or usurped power; however, this exclusion will not apply to cyber terrorism."
+  },
+  {
+    "id": "III.W",
+    "title": "Wrongful Collection and Biometric Privacy",
+    "page": 7,
+    "text": "1. Any actual or alleged violation of the Illinois Biometric Information Privacy Act or any similar federal, state, common, or foreign law; or\n2. any actual or alleged unlawful or unauthorized collection, processing, storage, sharing or sale of personally identifiable information, except this shall not apply to: a. SECTION II.A NETWORK AND INFORMATION SECURITY LIABILITY; and b. SECTION II.B. REGULATORY DEFENSE AND PENALTIES, for an otherwise covered claim under item 2. in the definition of privacy liability."
+  },
+  {
+    "id": "IV.When there is a claim or incident",
+    "title": "When There Is a Claim or Incident",
+    "page": 8,
+    "text": "You must, as a condition precedent to coverage under this Policy, provide us written notice of any claim or incident through the persons named in Item 8. of the Declarations as soon as practicable once such claim or incident is known to a senior executive. In no event will such notice to us be later than: (i) the end of the policy period; or (ii) 60 days after the end of the policy period for claims made against you or incidents first discovered by you, in the last 30 days of the policy period. In the event of an adverse publication, such notice will include complete details of the adverse publication and date you first became aware of such adverse publication."
+  },
+  {
+    "id": "IV.When there is a circumstance",
+    "title": "When There Is a Circumstance",
+    "page": 8,
+    "text": "With respect to Third Party Liability Coverages, if during the policy period, you become aware of any act or other circumstances that could reasonably be expected to give rise to a future claim covered under this Policy, and you give written notice to us through the persons named in Item 8. of the Declarations during the policy period of:\n1. a detailed description of the act or other circumstances that could reasonably be expected to give rise to the future claim, including dates, persons, and entities involved; 2. the identity of the potential claimants; 3. the details of how you first became aware of the act or other circumstances; and 4. the nature of the potential damages;\nthen any claim arising out of the act or other circumstances reported under this Section will be deemed to have been made and reported at the time written notice complying with the above requirements was first provided to us during the policy period."
+  },
+  {
+    "id": "IV.Duty to cooperate",
+    "title": "Duty to Cooperate",
+    "page": 8,
+    "text": "We will have the right to make any investigation we deem necessary, and you will cooperate with us in all investigations, respond to reasonable requests for information, and execute all papers and render all assistance as requested by us. You will do nothing that increases our exposure under this Policy. You will also cooperate with us and counsel in the defense of all claims and response to all events, and provide all information necessary for appropriate and effective representation."
+  },
+  {
+    "id": "IV.Obligation to not incur any expense or admit liability",
+    "title": "Obligation to not Incur Any Expense or Admit Liability",
+    "page": 8,
+    "text": "You will not, except at your own cost, admit liability, make any payment, assume any obligation, incur any expense, enter into any settlement, stipulate to any judgment or award, or dispose of any claim without our prior written consent, except as specifically provided in Section V, CLAIMS PROCESS. Compliance with a breach notice law will not be considered as an admission of liability for purposes of this paragraph.\nExpenses incurred by you in assisting and cooperating with us do not constitute claim expenses, loss, breach response costs, or breach response services under this Policy."
+  },
+  {
+    "id": "IV.Obligation to preserve our right of subrogation",
+    "title": "Obligation to Preserve Our Right of Subrogation",
+    "page": 8,
+    "text": "In the event of any payment by us under this Policy, we will be subrogated to all of your rights of recovery. You will do everything necessary to secure and preserve such subrogation rights, including the execution of any documents necessary to enable us to bring suit in your name. You will not do anything after an event or other circumstance giving rise to a claim, loss, breach response costs, breach response services, regulatory penalties, or PCI fines and assessments to prejudice such subrogation rights without first obtaining our consent.\nThis obligation does not apply to the extent that the right to subrogate is waived by you under a written contract with a person or organization, prior to the event or other circumstance giving rise to a claim, loss, breach response costs, breach response services, regulatory penalties, or PCI fines and assessments."
+  },
+  {
+    "id": "IV.Authorization of named insured to act on behalf of all insureds",
+    "title": "Authorization of Named Insured to Act on Behalf of All Insureds",
+    "page": 9,
+    "text": "It is agreed that the named insured will act on behalf of all insureds with respect to the giving of notice of a claim, giving and receiving of notice of cancellation and non-renewal, payment of premiums and receipt of any return premiums that may become due under this Policy, receipt and acceptance of any endorsements issued to form a part of this Policy, exercising or declining of the right to tender the defense of a claim to us, and exercising or declining to exercise of any right to an Optional Extended Reporting Period. Where there is more than one named insured listed in Item 1 of the Policy Declarations or by endorsement to this Policy, then for the purpose of this clause only, the named insured is deemed to be the first entity listed under Item 1 of the Policy Declarations."
+  },
+  {
+    "id": "V.Defense",
+    "title": "Defense",
+    "page": 9,
+    "text": "We will have the right and duty to defend, subject to the Limits of Liability and applicable Retention(s), exclusions, conditions, and other terms of this Policy:\n1. any claim against you seeking damages that are payable under the terms of this Policy; or 2. under Section II.B, REGULATORY DEFENSE AND PENALTIES, any claim in the form of a regulatory proceeding.\nYou have the right to select defense counsel from our panel providers.\nIf you would like to retain defense counsel not on our list of panel providers, such counsel must be mutually agreed upon between you and us, which agreement will not be unreasonably withheld, and subject to a fee rate structure substantially similar to that of our panel providers.\nWe will pay claim expenses incurred with our prior written consent with respect to any claim seeking damages, funds transfer liability loss, or regulatory penalties payable under this Policy. We will have no obligation to pay claim expenses until you have satisfied the applicable Retention.\nThe Limits of Liability of this Policy will be reduced and may be completely exhausted by payment of claim expenses. Our duty to defend ends once the applicable Limit of Liability is exhausted, or after deposit of the amount remaining on the applicable Limit of Liability in a court of competent jurisdiction. Upon such payment, we will have the right to withdraw from the defense of the claim."
+  },
+  {
+    "id": "V.Right to associate",
+    "title": "Right to Associate",
+    "page": 9,
+    "text": "We have the right, but not the duty, to associate in the investigation and response to any event or claim, including participation in the formation of strategy and review of forensic investigations and reports."
+  },
+  {
+    "id": "V.Pre-claim assistance",
+    "title": "Pre-Claim Assistance",
+    "page": 10,
+    "text": "If we are provided with notice of an act or other circumstance that is not yet a claim under Section IV, YOUR OBLIGATIONS AS AN INSURED, and you request assistance to mitigate against any potential future claim or incident, we may, in our discretion, agree to pay for up to the amount shown in Item 6. of the Declarations for legal, forensic, and IT services provided by a third party. Any such fees must be incurred with our prior consent by legal counsel or a consultant we have mutually agreed upon. If there is a subsequent covered claim made, or covered incident, then such legal counsel and consultant fees will be considered claim expenses, loss, or breach response costs and will be subject to the applicable Limits of Liability and the Aggregate Policy Limit of Liability."
+  },
+  {
+    "id": "V.Settlement",
+    "title": "Settlement",
+    "page": 10,
+    "text": "If you refuse to consent to any settlement or compromise of a claim recommended by us and acceptable to the claimant, our liability for such claim will not exceed:\n1. the amount for which such claim could have been settled, less the retention, plus claim expenses incurred up to the time of such refusal; and 2. seventy percent (70%) of claim expenses incurred after such settlement was refused by you, plus seventy percent (70%) of damages and regulatory penalties in excess of the amount such claim could have been settled under such settlement.\nIn this event, we will have the right to withdraw from the further defense of such claim by tendering control of the defense thereof to you. The operation of this paragraph will be subject to the Limits of Liability and Retention provisions of this Policy."
+  },
+  {
+    "id": "V.Settlement within retention",
+    "title": "Settlement Within Retention",
+    "page": 10,
+    "text": "We agree that you may settle any claim where the total claim expenses, loss, damages, breach response costs, breach response services, regulatory penalties, and PCI fines and assessments do not exceed the applicable Retention, provided the entire claim is resolved and you obtain a full release from all claimants."
+  },
+  {
+    "id": "V.Proof of loss",
+    "title": "Proof of Loss",
+    "page": 10,
+    "text": "With respect to business interruption loss, contingent business interruption loss, extra expenses, and reputational harm loss, you must complete and sign a written, detailed, and affirmed proof of loss within 90 days after your discovery of the security failure, systems failure, or adverse publication (unless such period has been extended by us in writing) which will include, at a minimum, the following information:\n1. a full description of the circumstances, including the time, place, and cause of the loss; and 2. a detailed calculation of any business interruption loss, contingent business interruption loss, extra expenses, and reputational harm loss; and all underlying documents and materials that reasonably relate to or form part of the basis of the proof of such business interruption loss, contingent business interruption loss, extra expenses, and reputational harm loss.\nAny costs you incur in connection with establishing or proving business interruption loss, contingent business interruption loss, extra expenses, or reputational harm loss, including preparing a proof of loss in excess of the Limits of Liability under Section II.K, PROOF OF LOSS PREPARATION EXPENSES, if purchased, will be your obligation and are not covered under this Policy. Solely with respect to verification of business interruption loss, contingent business interruption loss, and reputational harm loss, you agree to allow us to examine and audit your books and records that relate to this Policy at any time during the policy period and up to 12 months following our receipt of any proof of loss in accordance with this section."
+  },
+  {
+    "id": "VI.Limits of liability",
+    "title": "Limits of Liability",
+    "page": 11,
+    "text": "Aggregate Policy Limit of Liability and Limits of Liability for All Insuring Agreements Other Than Breach Response Services\nThe Aggregate Policy Limit of Liability set forth in Item 4. of the Declarations is the maximum amount we will be liable to pay for all claim expenses, damages, funds transfer liability loss, loss, breach response costs, PCI fines and assessments, regulatory penalties, and other amounts under this Policy, regardless of the number of claims, events, or insureds. The reference to Aggregate Policy Limit of Liability herein also refers to each participating Insurer's individual Quota Share Limit of Liability as stated in Item 7. of the Declarations.\nThe Per Event Limit of Liability set forth in Item 4. of the Declarations is the maximum amount we will be liable to pay for all claim expenses, damages, funds transfer liability loss, loss, breach response costs, PCI fines and assessments, regulatory penalties, and other amounts arising from a single event under all Insuring Agreements, regardless of the number of Insuring Agreements triggered, claims, or insureds. Such Limits of Liability are part of, and not in addition to, the Aggregate Policy Limit of Liability.\nThe Limit stated in Item 5. of the Declarations with respect to an Insuring Agreement is the maximum amount we will be liable to pay for all claim expenses, damages, funds transfer liability loss, loss, breach response costs, PCI fines and assessments, regulatory penalties, and other amounts arising from a single event and in aggregate for all events under that Insuring Agreement. Such Limits of Liability are part of, and not in addition to, the Aggregate Policy Limit of Liability.\nProvided further, however, that if you have purchased the Optional Additional Limit of Liability for Breach Response Costs, then breach response costs will not be subject to the Aggregate Policy Limit of Liability set forth in Item 4. of the Declarations, and instead shall be subject to the “Optional Additional Limit of Liability for Breach Response Costs” as set forth below.\nOptional Additional Limit of Liability for Breach Response Costs\nThe Optional Additional Limit of Liability for Breach Response Costs, if purchased, is the maximum amount we will be liable to pay for all breach response costs, regardless of the number of security failures, data breaches, or insureds. The Optional Additional Limit of Liability for Breach Response Costs, if purchased, is in addition to the Aggregate Policy Limit of Liability. Upon exhaustion of the Optional Additional Limit of Liability for Breach Response Costs, there will be no further coverage under this Policy for any breach response costs.\nBreach Response Services Breach response services will be provided for a maximum of 72 hours following your notification to the breach response services advisor. Breach response services will be provided in addition to and will not erode the Aggregate Policy Limit of Liability.\nOptional Extended Reporting Period\nOur Limits of Liability for an Optional Extended Reporting Period, if applicable, will be part of, and not in addition to the Aggregate Policy Limit of Liability set forth in Item 4. of the Declarations."
+  },
+  {
+    "id": "VI.Retention",
+    "title": "Retention",
+    "page": 12,
+    "text": "We will only be liable for those amounts payable under this Policy which are in excess of the applicable Retention(s). Such Retention(s) cannot be insured.\nIn the event that damages, funds transfer liability loss, PCI fines and assessments, regulatory penalties, claim expenses, breach response costs, breach response services, loss, or other amounts arising out of a claim or event are subject to more than one Retention, the Retention for each applicable insuring agreement will apply separately, provided that the sum of such Retention amounts will not exceed the largest applicable Retention amount.\nIn the event that you elect to use Coalition Incident Response to provide computer forensic professional services, and Coalition Incident Response is available to provide such services, then any fees, costs and expenses of Coalition Incident Response for computer forensic professional services that result in covered breach response costs, claim expenses, cyber extortion expenses, or restoration costs under the terms and conditions of this Policy will not be subject to any Retention."
+  },
+  {
+    "id": "VII.Cancellation and non-renewal",
+    "title": "Cancellation and Non-Renewal",
+    "page": 12,
+    "text": "We may cancel or elect not to renew this Policy by mailing to the named insured at the address shown in Item 1. of the Declarations, written notice stating when the cancellation or non-renewal will be effective. Where permitted by applicable law, however, we may provide such written notice of cancellation or non-renewal by electronic transmission. Such cancellation or non-renewal will not be less than thirty (30) days after such notice is mailed (or ten (10) days thereafter when cancellation is due to non-payment of premium or fraud or material misrepresentation). The mailing (or electronic transmission where permitted) of such notice as aforesaid will be sufficient proof of notice and this Policy will terminate at the date and hour specified in such notice.\nThis Policy may be cancelled by us for non-payment of premium, or for fraud or material misrepresentation by you in the application or other information provided to induce us to issue this Policy; or for fraud by you in connection with the submission of any claim or event for coverage under this Policy.\nThis Policy may be cancelled by the named insured by surrender of this Policy to us or by giving written notice to us stating when thereafter such cancellation will be effective. If this Policy is cancelled by us in accordance with the paragraphs above, we will refund the unearned premium computed pro rata. If the named insured cancels this Policy in accordance with the paragraph above, we will refund the unearned premium computed short rate. However, the premium will be deemed fully earned if any claim, event, or any circumstance that could reasonably be expected to give rise to a claim or event, is reported to us on or before the date of cancellation.\nWe have no obligation to renew this Policy.\nAny offer of renewal terms, conditions, Limits of Liability, and/or premiums different from those of this Policy will not constitute a cancellation or refusal to renew"
+  },
+  {
+    "id": "VII.Optional extended reporting period",
+    "title": "Optional Extended Reporting Period",
+    "page": 13,
+    "text": "In the event of cancellation or non-renewal of this Policy, by either the named insured or us, for reasons other than fraud or material misrepresentation in the application for this Policy, or non-payment of premium or amounts within the applicable Retention, the named insured will have the right, upon payment in full of additional premium, to purchase an Optional Extended Reporting Period under this Policy, subject to all terms, conditions, limitations of, and any endorsements to this Policy, for a period of either:\na. one year for an additional premium of 100% of the total annual premium; b. two years for an additional premium of 150% of the total annual premium; or c. three years for an additional premium of 200% of the total annual premium;\nfollowing the effective date of such cancellation or non-renewal.\nSuch Optional Extended Reporting Period applies only to a claim first made against you during the Optional Extended Reporting Period and reported to us during the Optional Extended Reporting Period, and arising out of any actual or alleged act, error, or omission committed on or after the retroactive date and before the end of the policy period (or, if applicable, before the effective date of the Change in Control in Section VIII) subject to the Retention, Limits of Liability, exclusions, conditions, and other terms of this Policy.\nThe Optional Extended Reporting Period will terminate on the effective date and hour of any other insurance issued to the named insured or the named insured's successor that replaces in whole or in part the coverage afforded by the Optional Extended Reporting Period.\nThe named insured's right to purchase the Optional Extended Reporting Period must be exercised in writing no later than sixty (60) days following the cancellation or non-renewal date of this Policy, and must include payment of premium for the applicable Optional Extended Reporting Period as well as payment of all premiums due to us. If such written notice is not given to us, the named insured will not, at a later date, be able to exercise such right.\nAt the commencement of any Optional Extended Reporting Period, the entire premium thereafter will be deemed earned and in the event the named insured terminates the Optional Extended Reporting Period before its expiring date, we will not be liable to return any portion of the premium for the Optional Extended Reporting Period. The fact that the time to report claims under this Policy may be extended by virtue of an Optional Extended Reporting Period will not in any way increase the Limits of Liability, and any amounts incurred during the Optional Extended Reporting Period will be part of, and not in addition to the Limits of Liability as stated in the Declarations. The Optional Extended Reporting Period will be renewable at our sole option."
+  },
+  {
+    "id": "VIII.Change in control",
+    "title": "Change in Control",
+    "page": 14,
+    "text": "If during the policy period:\n1. the named insured: (i) merges or consolidates with or into another entity, such that the named insured is not the surviving entity; or (ii) is acquired by another entity; or (iii) sells more than 50% of its assets to another entity, such that named insured is not the surviving entity; or 2. another entity or person, or group of affiliated entities or persons acting in concert, acquires securities or voting rights which result in ownership or voting control by the other organization(s) or person(s) of more than 50% of the outstanding voting stock or voting rights representing the present right to vote for the election of directors, trustees, managers (if a limited liability company), or the equivalent executive management functions of the named insured;\n(items 1 and 2 above both referred to as a “Change in Control”), then this Policy will continue to remain in effect until the end of the policy period, but only with respect to any event, act, error, or omission that first occurred prior to the Change in Control. There will be no coverage provided by this Policy for any event, act, error, or omission occurring after the Change in Control. The named insured must give written notice of a Change in Control to us as soon as practicable, but no later than thirty (30) days after the Change in Control. The full premium for this Policy will be deemed to be fully earned immediately upon the date of the Change in Control.\nThe above provision may be waived in writing by us."
+  },
+  {
+    "id": "VIII.Choice of law",
+    "title": "Choice of Law",
+    "page": 14,
+    "text": "Any disputes involving this Policy will be resolved applying the law designated in Item 12. of the Declarations, without reference to that jurisdiction’s choice of law principles."
+  },
+  {
+    "id": "VIII.No assignment",
+    "title": "No Assignment",
+    "page": 14,
+    "text": "No change in, modification of, or assignment of interest under this Policy will be effective except when made by written endorsement signed by us."
+  },
+  {
+    "id": "VIII.Non-permissible insurance",
+    "title": "Non-Permissible Insurance",
+    "page": 14,
+    "text": "Where we may not permissibly insure, either on an admitted or non-admitted basis, any entity that falls within the definition of an insured under this Policy, by virtue of the entity's domicile (or deemed location of risk for regulatory purposes), we will indemnify the named insured in respect of any loss to its insurable financial interest in such uninsured entity by way of agreed valuation calculated as the amount that we would have been liable to pay such uninsured entity for the applicable loss under the terms and conditions of this Policy had it been permissible to insure such uninsured entity."
+  },
+  {
+    "id": "VIII.Other insurance",
+    "title": "Other Insurance",
+    "page": 15,
+    "text": "With the exception of Section II, F. BREACH RESPONSE SERVICES and G. BREACH RESPONSE COSTS that shall operate as primary insurance, this Policy will apply excess of any other valid and collectible insurance available to you, including the self-insured retention or deductible portion of that insurance, unless such other valid and collectible insurance is written only as specific excess insurance to this Policy, without contribution by this Policy."
+  },
+  {
+    "id": "VIII.Territory",
+    "title": "Territory – the Universe",
+    "page": 15,
+    "text": "This Policy will apply to events occurring, claims made, and damages, losses, breach response costs, breach response services, regulatory penalties, and PCI fines and assessments incurred, anywhere in the universe."
+  },
+  {
+    "id": "VIII.Titles",
+    "title": "Titles",
+    "page": 15,
+    "text": "The titles and headings to the various sections, subsections, and endorsements of this Policy are included solely for ease of reference and do not limit coverage, expand coverage, or otherwise affect the provisions of such sections, subsections or endorsements."
+  },
+  {
+    "id": "VIII.Sanctions",
+    "title": "Sanctions",
+    "page": 15,
+    "text": "This Policy does not apply to the extent that trade or economic sanctions or other laws or regulations prohibit us from providing insurance, including but not limited to the payment of claim expenses, damages, funds transfer liability loss, loss, breach response costs, breach response services, regulatory penalties or PCI fines and assessments."
+  },
+  {
+    "id": "IX",
+    "title": "Definitions",
+    "page": 15,
+    "text": "Words and phrases that appear in lowercase bold in this Policy have the meanings set forth below:"
+  },
+  {
+    "id": "IX.Adverse publication",
+    "title": "Adverse publication",
+    "page": 15,
+    "text": "means any report or communication to the public through any media channel including television, print media, radio, the internet, or electronic mail, of information that was previously unavailable to the public, specifically concerning a security failure, data breach, cyber extortion, or privacy liability that affects your customers or clients. All adverse publications relating to the same security failure, data breach, cyber extortion, or privacy liability will be deemed to have occurred on the date of the first adverse publication for the purposes of determining the applicable reputation waiting period and reputation indemnity period, and will be deemed to constitute a single reputational harm loss."
+  },
+  {
+    "id": "IX.Application",
+    "title": "Application",
+    "page": 15,
+    "text": "means all applications, including any attachments thereto and supplemental information, submitted by or on behalf of the named insured to us in connection with the request for or underwriting of this Policy, or any prior policy issued by us of which this Policy is a renewal."
+  },
+  {
+    "id": "IX.Breach notice law",
+    "title": "Breach notice law",
+    "page": 15,
+    "text": "means any statute or regulation, including from the United States, Canada the UK, the European Union, or other country that requires: (i) notice to persons whose personally identifiable information was, or reasonably considered likely to have been, accessed or acquired by an unauthorized person; or (ii) notice to regulatory agencies of such incident."
+  },
+  {
+    "id": "IX.Breach response costs",
+    "title": "Breach response costs",
+    "page": 15,
+    "text": "means the following reasonable and necessary costs you incur with our prior written consent in response to an actual or suspected security failure or data breach: 1. computer forensic professional fees and expenses to determine the cause and extent of a security failure or data breach; 2. computer forensic professional fees for reasonable efforts to close off the point(s) of unauthorized entry and to terminate a security failure event; 3. costs to notify individuals affected or reasonably believed to be affected by such data breach, including printing costs, publishing costs, postage expenses, call center costs, and costs of notification via phone or e-mail; 4. costs to provide government mandated public notices related to such security failure or data breach; 5. legal fees and expenses to advise you in connection with your investigation of a security failure or data breach and to determine whether you are legally obligated under a breach notice law to notify applicable regulatory agencies or individuals affected or reasonably believed to be affected by such security failure or data breach; 6. legal fees and expenses to advise you in complying with Payment Card Industry (\"PCI\") operating regulation requirements for responding to a data breach compromising payment card data, and the related requirements under a merchant service agreement, including a PCI forensic investigator when required under such merchant service agreement (this clause does not include any fees or expenses incurred in any legal proceeding, arbitration, or mediation, for any advice in complying with any PCI rules or regulations other than for assessment of PCI fines and assessments for a covered data breach, or to remediate the breached computer systems); 7. costs to provide up to two years (or longer if required by law) of a credit or identity monitoring program, including credit freezing and thawing, to individuals affected by such data breach; and 8. identity theft restoration services to those natural persons identified by a licensed identity theft investigator as victims of identity theft affected by such data breach.\nBreach response costs must be incurred within one year of your discovery of an actual or suspected security failure or data breach. You have our prior consent to incur breach response costs in the form of computer forensic fees under paragraph 1. and legal fees under paragraphs 5. and 6. with any vendor on our list of panel providers."
+  },
+  {
+    "id": "IX.Breach response services",
+    "title": "Breach response services",
+    "page": 16,
+    "text": "means the following services to assist with your initial response to an actual or suspected security failure, data breach, cyber extortion, funds transfer fraud, or impersonation fraud:\n1. access to the 24/7 breach response hotline detailed in Item 8. of the Declarations; 2. two-hour consultation and advice by legal counsel from our panel providers; 3. consultation and advice by the breach response services advisor; 4. preliminary forensics and threat intelligence gathered by and known to the breach response services advisor; and 5. initial remote support and assistance provided by the breach response services advisor.\nBreach response services apply only to the initial assistance provided by the breach response services advisor and the two-hour consultation with legal counsel from our panel providers, and solely with respect to your initial response to an actual or suspected security failure, data breach, cyber extortion, funds transfer fraud, or impersonation fraud based upon the information provided by you to us and/or the breach response services advisor at the time you first notify us of the applicable security failure, data breach, cyber extortion, funds transfer fraud, or impersonation fraud. Breach response services are available only during the 72 hour time period following notification of the actual or suspected security failure, data breach, cyber extortion, funds transfer fraud, or impersonation fraud to the breach services advisor, and do not include the costs and expenses of any services which are covered under any other First Party Coverage of this Policy."
+  },
+  {
+    "id": "IX.Breach response services advisor",
+    "title": "Breach response services advisor",
+    "page": 17,
+    "text": "means the entity(ies) or person(s) named in Item 13. of the Declarations."
+  },
+  {
+    "id": "IX.Business interruption loss",
+    "title": "Business interruption loss",
+    "page": 17,
+    "text": "means:\n1. the net profit that would have been earned before taxes on income, or net loss that would not have been incurred, directly due to the partial or complete interruption of computer systems; and 2. continuing normal operating expenses (including payroll), but only to the extent that such operating expenses must necessarily continue during the indemnity period.\nProvided, however, that business interruption loss will not include net profit that would likely have been earned as a result of an increase in volume due to favorable business conditions caused by the impact of network security failures impacting other businesses, loss of market, or any other consequential loss."
+  },
+  {
+    "id": "IX.Business services",
+    "title": "Business services",
+    "page": 17,
+    "text": "means software as a service (SaaS), platform as a service (PaaS), infrastructure as a service (IaaS), network as a service (NaaS), voice over internet protocol, and telephony services that:\n1. you use regularly in the normal course of your business; 2. you are charged a fee for on a regular periodic basis, no less frequently than on a semi-annual basis; and 3. are provided to you pursuant to a written contract."
+  },
+  {
+    "id": "IX.Claim",
+    "title": "Claim",
+    "page": 17,
+    "text": "means:\n1. a written demand for money or services, including the service of a suit or institution of arbitration proceedings; 2. with respect to coverage provided under Section II.B, REGULATORY DEFENSE AND PENALTIES, a regulatory proceeding; 3. with respect to coverage under Section II.C, PCI FINES AND ASSESSMENTS, a written demand for PCI fines and assessments; and 4. a written request to toll or waive a statute of limitations applicable to a potential claim described in paragraph 1. above.\nAll claims that have a common nexus of fact, circumstance, situation, event, transaction, or cause, or a series of related facts, circumstances, situations, events, transactions, or causes will be considered a single claim made against you on the date the first such claim was made."
+  },
+  {
+    "id": "IX.Claim expenses",
+    "title": "Claim expenses",
+    "page": 18,
+    "text": "means:\n1. reasonable and necessary fees charged by an attorney to which we have agreed to defend a claim; 2. all other fees, costs, and charges for the investigation, defense, and appeal of a claim, if incurred by us or by you with our prior written consent; and 3. premiums on appeal bonds, provided that we will not be obligated to apply for or furnish such appeal bonds.\nClaim expenses do not include salary, charges, wages, or expenses of any senior executive or employee, or costs to comply with any court or regulatory orders, settlements, or judgments."
+  },
+  {
+    "id": "IX.Computer replacement costs",
+    "title": "Computer replacement costs",
+    "page": 18,
+    "text": "means the reasonable and necessary costs you incur, with our prior written consent, to restore or replace computer hardware or tangible equipment owned or leased by you impacted by a loss of firmware integrity resulting from a security failure."
+  },
+  {
+    "id": "IX.Computer systems",
+    "title": "Computer systems",
+    "page": 18,
+    "text": "means:\n1. computers and related peripheral components, including Internet of Things (IoT) devices; 2. systems and applications software; 3. terminal devices; 4. related communications networks; 5. mobile devices (handheld and other wireless computing devices); and 6. storage and back-up devices\nby which electronic data is collected, transmitted, processed, stored, backed up, retrieved, and operated by you on your own behalf.\nComputer systems include hosted computer systems."
+  },
+  {
+    "id": "IX.Consumer redress awards",
+    "title": "Consumer redress awards",
+    "page": 18,
+    "text": "means any monetary amounts you are legally obligated or have agreed to deposit into a consumer redress fund as equitable relief for the payment of consumer claims due to an adverse judgement or settlement of a regulatory proceeding. Consumer redress awards do not include any sums paid which constitute taxes, fines, penalties, injunctions, or sanctions."
+  },
+  {
+    "id": "IX.Contingent business interruption loss",
+    "title": "Contingent business interruption loss",
+    "page": 18,
+    "text": "means:\n1. the net profit that would have been earned before taxes on income, or net loss that would not have been incurred, directly due to the partial or complete interruption of hosted computer systems; and 2. continuing normal operating expenses (including payroll), but only to the extent that such operating expenses must necessarily continue during the indemnity period.\nProvided, however, that contingent business interruption loss will not include net profit that would likely have been earned as a result of an increase in volume due to favorable business conditions caused by the impact of network security failures impacting other businesses, loss of market, or any other consequential loss."
+  },
+  {
+    "id": "IX.Continuity date",
+    "title": "Continuity date",
+    "page": 19,
+    "text": "means the date specified in Item 10. of the Declarations. Provided, if a subsidiary is acquired during the policy period, the continuity date for such subsidiary will be the date the named insured acquired such subsidiary."
+  },
+  {
+    "id": "IX.Court attendance costs",
+    "title": "Court attendance costs",
+    "page": 19,
+    "text": "means the reasonable costs and expenses of attending at our request a trial, hearing, deposition, mediation, arbitration, or other proceeding relating to the defense of any claim."
+  },
+  {
+    "id": "IX.Criminal reward costs",
+    "title": "Criminal reward costs",
+    "page": 19,
+    "text": "means any amount offered and paid by us for information that leads to the arrest and conviction of any individual(s) committing or trying to commit any illegal act related to any coverage under this Policy. This Policy will not cover amounts offered and paid-for-information provided by you, your legal counsel and/or auditors, whether internal or external, individuals hired or retained in response to the aforementioned illegal acts, or other individuals with responsibilities for supervision or management of the aforementioned individuals and entities."
+  },
+  {
+    "id": "IX.Crisis management costs",
+    "title": "Crisis management costs",
+    "page": 19,
+    "text": "means the following reasonable fees or expenses agreed to in advance by us, in our discretion, to mitigate covered damages, loss, claim expenses, breach response costs, or breach response services due to a public relations event:\n1. a public relations or crisis management consultant; 2. media purchasing, or for printing or mailing materials intended to inform the general public about the public relations event; 3. providing notifications to individuals where such notifications are not required by breach notice law, including notices to your non-affected customers, employees, or clients; and 4. other costs approved in advance by us."
+  },
+  {
+    "id": "IX.Cyber extortion",
+    "title": "Cyber extortion",
+    "page": 19,
+    "text": "means any:\n1. threat made by an individual or organization against you expressing the intent to: a. transfer, pay, or deliver any funds or property belonging to you, or held by you on behalf of others, using computer systems without your permission, authorization, or consent; b. access, acquire, sell, or disclose non-public information in your care, custody, or control, provided such information is stored in an electronic medium in computer systems and is retrievable in a perceivable form; c. alter, damage, or destroy any computer program, software, or other electronic data that is stored within computer systems; d. maliciously or fraudulently introduce malicious code or ransomware into computer systems; or e. initiate a denial of service attack on computer systems; or 2. introduction of malicious code or ransomware into computer systems by an individual or organization; or, 3. denial of service attack on computer systems;\nwhere such threat is made or act is committed for the purpose of demanding payment of money, securities, Bitcoin or other virtual currencies, property, or goods from you."
+  },
+  {
+    "id": "IX.Cyber extortion expenses",
+    "title": "Cyber extortion expenses",
+    "page": 20,
+    "text": "means the following reasonable and necessary costs incurred with our prior written consent:\n1. money, securities, Bitcoin, or other virtual currencies paid at the direction and demand of any person committing cyber extortion and costs incurred solely in, and directly from, the process of making or attempting to make such a payment; 2. value of property or goods demanded by any person committing cyber extortion and costs incurred solely in, and directly from, the process of delivering or attempting to deliver to such property or goods; and 3. reasonable and necessary costs, fees, and expenses to respond to a cyber extortion.\nThe value of cyber extortion expenses will be determined as of the date such cyber extortion expenses are paid."
+  },
+  {
+    "id": "IX.Cyber terrorism",
+    "title": "Cyber terrorism",
+    "page": 20,
+    "text": "means the premeditated use, or threatened use, of disruptive activities against computer systems by any person, group, or organization, committed with the intention to harm or intimidate you to further social, ideological, religious, or political objectives. However, cyber terrorism does not include any activity which is part of or in support of any military action, war, or warlike operation."
+  },
+  {
+    "id": "IX.Damages",
+    "title": "Damages",
+    "page": 20,
+    "text": "means a monetary judgment or award that you are legally obligated to pay, including pre-judgment and post-judgment interest, or a settlement agreed to by you and us. Damages does not mean the following:\n1. future profits, restitution, disgorgement of profits, or unjust enrichment, or the costs of complying with orders granting injunctive or equitable relief; 2. return or offset of fees, charges, or commissions charged by or owed to you for goods or services already provided or contracted to be provided; 3. funds transfer liability loss; 4. liquidated damages, contractual service credits or penalties, but only to the extent such liquidated damages, contractual service credits or penalties exceed the amount for which the insured would have been liable in the absence of any agreement to pay such liquidated damages, contractual service credits or penalties; 5. civil or criminal fines or penalties, civil or criminal sanctions, payroll or other taxes, or loss of tax benefits, or amounts or relief uninsurable under applicable law; 6. any damages which are a multiple of compensatory damages, or punitive or exemplary damages, unless insurable by law in any applicable jurisdiction that most favors coverage for such punitive or exemplary damages; 7. discounts, coupons, prizes, awards, or other incentives offered by you; 8. fines, costs, assessments, or other amounts you are responsible to pay under a merchant service agreement; or 9. any amounts for which you are not liable, or for which there is no legal recourse against you."
+  },
+  {
+    "id": "IX.Data breach",
+    "title": "Data breach",
+    "page": 20,
+    "text": "means the acquisition, access, theft, or disclosure of personally identifiable information or third party corporate information in a manner that is unauthorized by you including resulting from a security failure."
+  },
+  {
+    "id": "IX.Denial of service attack",
+    "title": "Denial of service attack",
+    "page": 21,
+    "text": "means a deliberate or malicious attack that makes computer systems unavailable to its intended users, temporarily or indefinitely disrupting the services of a host that you use by directing an excessive volume of electronic data to that host."
+  },
+  {
+    "id": "IX.Digital asset",
+    "title": "Digital asset",
+    "page": 21,
+    "text": "means any of your electronic data or computer software. Digital assets do not include computer hardware of any kind."
+  },
+  {
+    "id": "IX.Employee",
+    "title": "Employee",
+    "page": 21,
+    "text": "means any past, present, or future:\n1. person employed by the named insured or subsidiary as a permanent, part-time, seasonal, leased, or temporary employee, intern, or any volunteer; and 2. senior executive;\nbut only while acting on behalf of the named insured or subsidiary and in the scope of the business operations of the named insured or subsidiary."
+  },
+  {
+    "id": "IX.Event",
+    "title": "Event",
+    "page": 21,
+    "text": "means a funds transfer liability, incident, privacy liability, or multimedia wrongful act.\nAll events that have a common nexus of fact, circumstance, situation, transaction, or cause, or a series of related facts, circumstances, situations, transactions, or causes will be considered a single event occurring on the date the first such event occurred."
+  },
+  {
+    "id": "IX.Extra expenses",
+    "title": "Extra expenses",
+    "page": 21,
+    "text": "means your reasonable and necessary additional costs incurred to avoid or minimize a business interruption loss, including:\n1. the reasonable and necessary additional costs of sourcing your products or services from alternative sources in order to meet contractual obligations to supply your customers and clients; 2. the reasonable and necessary additional costs of employing contract staff or overtime costs for employees, including your internal IT department, in order to continue your business operations which would otherwise have been handled in whole or in part by computer systems or service provider; and 3. the reasonable and necessary additional costs of employing specialist consultants, including IT forensic consultants, in order to diagnose and fix a security failure or systems failure.\nProvided, however, that such additional costs do not exceed the amount of loss that otherwise would have been payable as business interruption loss.\nExtra expenses does not mean and will not include:\n1. costs incurred to update, restore, replace, upgrade, maintain, or improve computer systems: a. to a level greater than existed before a security failure, unless the costs to upgrade to a more current or secure version of functionally equivalent components of computer systems is no more than 25% greater than the costs that would have been incurred to repair or replace computer systems that existed before a security failure; or b. to a level greater than existed before a system failure; or 2. costs incurred to acquire or install computer systems which did not form a part of computer systems immediately prior to the security failure or system failure."
+  },
+  {
+    "id": "IX.Funds transfer fraud",
+    "title": "Funds transfer fraud",
+    "page": 22,
+    "text": "means a fraudulent instruction transmitted by electronic means, including through social engineering, to you or your financial institution (including an escrow account provider) directing you, or the financial institution (including an escrow account provider):\n1. to debit, or instruct to authorize to debit, an account held by the named insured or subsidiary, or held by the named insured or subsidiary on behalf of a third party, and to transfer, pay, or deliver money or securities from such account; or 2. to transfer or deliver tangible property owned by the named insured or subsidiary;\nwhich instruction purports to have been transmitted by you or your vendors, business partners, or existing clients, and impersonates such party, including through the use of deepfakes, but was transmitted by someone other than you or your vendors, business partners, or existing clients, and without such party’s knowledge or consent. The “financial institution” does not include any such entity, institution, or organization that is an insured."
+  },
+  {
+    "id": "IX.Funds transfer liability",
+    "title": "Funds transfer liability",
+    "page": 22,
+    "text": "means distribution of fraudulent wire transfer or payment instructions which instruction purports to have been transmitted by you directing your vendors, business partners, or existing clients to transfer funds to a third party, but was transmitted by someone other than you as the result of a security failure."
+  },
+  {
+    "id": "IX.Funds transfer liability loss",
+    "title": "Funds transfer liability loss",
+    "page": 22,
+    "text": "means a monetary judgment or award that you are legally obligated to pay, or a settlement agreed to by you and us, because of the transfer of money, securities, or digital currencies by any of your vendors, business partners, or existing clients to a third party as the direct result of a funds transfer liability."
+  },
+  {
+    "id": "IX.Funds transfer loss",
+    "title": "Funds transfer loss",
+    "page": 22,
+    "text": "means:\n1. loss of money, securities, or tangible property directly resulting from funds transfer fraud; and 2. reasonable and necessary costs, fees, and expenses to respond to funds transfer fraud.\nFunds transfer loss does not mean and will not include:\na. the loss of personal money, securities, or property of your employees; or b. chargeback loss arising from the acceptance of payment cards used fraudulently."
+  },
+  {
+    "id": "IX.Hosted computer systems",
+    "title": "Hosted computer systems",
+    "page": 22,
+    "text": "means:\n1. computers and related peripheral components, including Internet of Things (IoT) devices; 2. systems and applications software; 3. terminal devices; 4. related communications networks; 5. mobile devices (handheld and other wireless computing devices); and 6. storage and back-up devices\nby which electronic data is collected, transmitted, processed, stored, backed up, retrieved, and operated by a third party vendor, but only for providing hosted computer services, including SaaS, IaaS, NaaS and PaaS, to you pursuant to a written contract."
+  },
+  {
+    "id": "IX.Impersonation fraud",
+    "title": "Impersonation fraud",
+    "page": 23,
+    "text": "means fraudulent electronic communications or websites designed to impersonate you or any of your products provided that such fraudulent communications or websites do not arise out of or result from any security failure."
+  },
+  {
+    "id": "IX.Impersonation repair costs",
+    "title": "Impersonation repair costs",
+    "page": 23,
+    "text": "means:\n1. the cost of retaining a law firm and public relations firm incurred by you to create and publish a press release or establish a website to advise your customers and prospective customers of an impersonation fraud; and 2. the cost of reimbursing your existing customers for their loss of money or tangible property directly resulting from an impersonation fraud; and 3. the cost of retaining a third party for the removal of websites designed to impersonate you."
+  },
+  {
+    "id": "IX.Incident",
+    "title": "Incident",
+    "page": 23,
+    "text": "means adverse publication, cyber extortion, data breach, funds transfer fraud, impersonation fraud, invoice manipulation, public relations event, security failure, or systems failure.\nAll incidents that have a common nexus of fact, circumstance, situation, event, transaction, or cause, or series of related facts, circumstances, situations, events, transactions, or causes will be considered a single incident occurring on the date the first such incident occurred."
+  },
+  {
+    "id": "IX.Indemnity period",
+    "title": "Indemnity period",
+    "page": 23,
+    "text": "means the time period that:\n1. begins on the date and time that the partial or complete interruption of computer systems first occurred; and 2. ends on the earlier of the date and time that the interruption to your business operations resulting from such interruption of computer systems: (i) ends; or (ii) could have ended if you had acted with due diligence and dispatch.\nHowever, in no event will the indemnity period exceed 180 days."
+  },
+  {
+    "id": "IX.Insured, you, or your",
+    "title": "Insured, you, or your",
+    "page": 23,
+    "text": "means:\n1. the named insured; 2. a subsidiary; 3. senior executives and employees; 4. an independent contractor, who is a natural person, solely acting in the normal course of the named insured or subsidiary’s business operations while under their direct supervision; 5. with respect to Sections II.A, NETWORK AND INFORMATION SECURITY LIABILITY, and II.B, REGULATORY DEFENSE AND PENALTIES, any person or entity you have agreed in a written contract or agreement to add as an additional insured to a policy providing the type of coverage afforded by this Policy, provided such contract or agreement is in effect or becomes effective during the policy period, and solely for such person's or entity’s liability arising out of the named insured’s or subsidiary’s acts (hereafter an additional insured); 6. the estates, heirs, legal representatives, or assignees of any employee or senior executive in the event of their death, incapacity, insolvency, or bankruptcy but solely for the estates’, heirs’, legal representatives’, or assignee’s liability arising out of the acts committed by the employee or senior executive, in their capacity as such; and 7. the spouse, domestic partner, or civil partner of any employee or senior executive solely for such spouse’s, domestic partner’s, or civil partner’s liability resulting from a claim against the employee or senior executive, in their capacity as such; or their ownership or interest in property which the claimant seeks as recovery for a claim against the employee or senior executive, in their capacity as such."
+  },
+  {
+    "id": "IX.Invoice Manipulation",
+    "title": "Invoice Manipulation",
+    "page": 24,
+    "text": "means the release or distribution of any fraudulent invoice or payment instruction to a third party as a direct result of a security failure."
+  },
+  {
+    "id": "IX.Invoice Manipulation Loss",
+    "title": "Invoice Manipulation Loss",
+    "page": 24,
+    "text": "means your direct net costs, excluding any profit, to provide goods, products, or services to a third party for which you are unable to collect payment after transfer of such goods, products, or services to a third party as the direct result of invoice manipulation."
+  },
+  {
+    "id": "IX.Loss",
+    "title": "Loss",
+    "page": 24,
+    "text": "means business interruption loss, computer replacement costs, contingent business interruption loss, court attendance costs, criminal reward costs, crisis management costs, cyber extortion expenses, extra expenses, funds transfer loss, impersonation repair costs, invoice manipulation loss, proof of loss preparation expenses, reputational harm loss, service fraud loss, and restoration costs."
+  },
+  {
+    "id": "IX.Malicious code",
+    "title": "Malicious code",
+    "page": 24,
+    "text": "means any type of malicious, unauthorized, corrupting or harmful software program, code, or script specifically designed to create system vulnerabilities and destroy, alter, steal, contaminate, or degrade the integrity, quality, or performance of:\n1. electronic data used or stored in any computer system or network; or 2. a computer network, any computer application software, or computer operating system or related network."
+  },
+  {
+    "id": "IX.Media content",
+    "title": "Media content",
+    "page": 24,
+    "text": "means content in any form, regardless of its nature or medium, including any data, text, sounds, numbers, images, graphics, videos, streaming content, webcasts, podcasts, or blogs. Media content does not include any biometric personally identifiable information, computer software, or the actual goods, products, or services described, referenced, illustrated, or displayed in such media content."
+  },
+  {
+    "id": "IX.Merchant service agreement",
+    "title": "Merchant service agreement",
+    "page": 24,
+    "text": "means any agreement between you and a financial institution, payment card company, payment card processor, or independent service operator, that enables you to accept credit cards, debit cards, prepaid cards, or other payment cards for payments or donations."
+  },
+  {
+    "id": "IX.Multimedia wrongful act",
+    "title": "Multimedia wrongful act",
+    "page": 24,
+    "text": "means any of the following actually or allegedly committed by you in the normal course of your business in communicating, reproducing, publishing, disseminating, displaying, releasing, transmitting, or disclosing media content, including social media authorized by you:\n1. defamation, libel, slander, trade libel, infliction of emotional distress, outrage, outrageous conduct, or other tort related to disparagement or harm to the reputation or character of any person or organization; 2. violation of the rights of privacy of an individual, including false light and public disclosure of private facts; 3. invasion or interference with an individual’s right of publicity, including commercial appropriation of name, persona, voice, or likeness; 4. plagiarism, piracy, or misappropriation of ideas under implied contract; 5. infringement of copyright, domain name, trademark, trade name, logo, title, metatag, slogan, service mark, or service name; or 6. improper deep-linking or framing within electronic content."
+  },
+  {
+    "id": "IX.Named insured",
+    "title": "Named insured",
+    "page": 25,
+    "text": "means the individual, partnership, entity, or corporation designated as such in Item 1. of the Declarations, or by endorsement to this Policy."
+  },
+  {
+    "id": "IX.Panel Providers",
+    "title": "Panel Providers",
+    "page": 25,
+    "text": "means those firms listed on our web site at: www.coalitioninc.com/panel"
+  },
+  {
+    "id": "IX.PCI fines and assessments",
+    "title": "PCI fines and assessments",
+    "page": 25,
+    "text": "means the direct monetary fines and assessments for fraud recovery, operational expenses including card reissuance fees and notification of cardholders, and case management fees owed by you under the terms of a merchant service agreement, but only where such fines or assessments result from a data breach. PCI fines and assessments will not include any charge backs, interchange fees, discount fees, or other services related fees, rates, or charges."
+  },
+  {
+    "id": "IX.Personally identifiable information",
+    "title": "Personally identifiable information",
+    "page": 25,
+    "text": "means any information about an individual that is required by any federal, provincial, territorial, state, local, or foreign law or regulation to be protected from unauthorized access, acquisition, or public disclosure."
+  },
+  {
+    "id": "IX.Policy period",
+    "title": "Policy period",
+    "page": 25,
+    "text": "means the period of time between the inception date shown in the Declarations and the effective date of termination, expiration, or cancellation of this Policy and specifically excludes any Optional Extended Reporting Period."
+  },
+  {
+    "id": "IX.Pollutants",
+    "title": "Pollutants",
+    "page": 25,
+    "text": "means any solid, liquid, gaseous, or thermal irritant or contaminant exhibiting hazardous characteristics as is or may be identified on any list of toxic or hazardous substances pursuant to, any governmental, federal, provincial, territorial, state, local, or foreign legislation or agency, including gas, acids, alkalis, chemicals, odors, noise, lead, petroleum or petroleum-containing products, heat, smoke, vapor, soot, fumes, radiation, asbestos or asbestos-containing products, waste (including material to be recycled, reconditioned, or reclaimed), electric, magnetic, or electromagnetic field of any frequency, as well as any air emission, wastewater, sewage, infectious medical waste, nuclear materials, nuclear waste, mold, mildew, fungus, bacterial matter, mycotoxins, spores, scents or by-products and any non-fungal micro-organism, or non-fungal colony form organism that causes infection or disease."
+  },
+  {
+    "id": "IX.Privacy liability",
+    "title": "Privacy liability",
+    "page": 25,
+    "text": "means: 1. your actual or alleged failure to timely disclose a security failure or data breach resulting in a violation of any breach notice law; 2. your failure to comply with those provisions in your privacy policy that specifically: a. mandate procedures to prevent the loss of personally identifiable information; b. prohibit or restrict disclosure, sharing, or selling of an individual’s personally identifiable information; or c. require you to give access to personally identifiable information or to amend or change personally identifiable information after a request is made by the concerning individual; provided that no senior executive knew of or had reason to know of any such conduct; or 3. your failure to administer an identity theft prevention program or an information disposal program pursuant to 15 U.S.C. 1681, as amended, or any similar state or federal law."
+  },
+  {
+    "id": "IX.Privacy policy",
+    "title": "Privacy policy",
+    "page": 26,
+    "text": "means any public written statements that set forth your policies, standards, and procedures for the collection, use, disclosure, sharing, dissemination, and correction or supplementation of, and access to, personally identifiable information."
+  },
+  {
+    "id": "IX.Proof of loss preparation expenses",
+    "title": "Proof of loss preparation expenses",
+    "page": 26,
+    "text": "means the reasonable and necessary costs you incur with our prior written consent for a third party forensic accounting firm to assist you with preparing a proof of loss as required by Section V. CLAIMS PROCESSES, PROOF OF LOSS with respect to business interruption loss, contingent business interruption loss, extra expenses or reputational harm loss covered under this Policy."
+  },
+  {
+    "id": "IX.Public relations event",
+    "title": "Public relations event",
+    "page": 26,
+    "text": "means:\n1. the publication or imminent publication in a newspaper (or other general circulation print publication), on radio or television, or electronic news website (but not including social media) of a security failure or data breach that has resulted in a covered claim under this Policy; and 2. a security failure or data breach that results in covered breach response costs under this Policy or which reasonably may result in a covered claim under the Policy."
+  },
+  {
+    "id": "IX.Ransomware",
+    "title": "Ransomware",
+    "page": 26,
+    "text": "means any malicious code designated to block your access to computer systems or digital assets, delete or otherwise harm your computer systems or digital assets, or cause a security failure, until a sum of money is paid."
+  },
+  {
+    "id": "IX.Regulatory penalties",
+    "title": "Regulatory penalties",
+    "page": 26,
+    "text": "means monetary fines and penalties, including consumer redress awards, imposed in a regulatory proceeding to the extent insurable under applicable law.\nRegulatory penalties will not mean any:\n1. costs to comply with injunctive relief; 2. costs to establish or improve privacy or security practices; or 3. audit, reporting, or compliance costs."
+  },
+  {
+    "id": "IX.Regulatory proceeding",
+    "title": "Regulatory proceeding",
+    "page": 27,
+    "text": "means a request for information, civil investigative demand, or civil proceeding commenced by service of a complaint or similar proceeding brought by or on behalf of:\n1. the Federal Trade Commission, Federal Communications Commission, Securities and Exchange Commission (SEC) arising only from S-P (17 C.F.R. § 248), or any federal, state, local, or foreign governmental entity in such entity’s regulatory or official capacity, in connection with such proceeding arising from a security failure or data breach; or 2. any federal, state, local, or foreign governmental entity in such entity’s regulatory or official capacity for a violation of the General Data Protection Regulation (GDPR), California Consumer Privacy Act (CCPA), or any similar federal, state, local, or foreign regulation, provided that such violation arises from a security failure, data breach, or a privacy liability.\nOther than the foregoing, regulatory proceeding does not include a request for information, civil investigative demand, or civil proceeding commenced by service of a complaint or similar proceeding brought by the Securities and Exchange Commission (SEC) and similar federal, state, local, or foreign governmental entities."
+  },
+  {
+    "id": "IX.Reputational harm loss",
+    "title": "Reputational harm loss",
+    "page": 27,
+    "text": "means the net profit that would have been earned before taxes on income, or net loss that would not have been incurred solely and directly as the result of any adverse publication.\nReputational harm loss does not include any:\n1. costs to rehabilitate your reputation, including legal costs or expenses; 2. breach response costs, crisis management costs, business interruption loss, contingent business interruption loss, or extra expenses; 3. costs not directly caused by an adverse publication.\nReputational harm loss will not include net profit that would likely have been earned before taxes on income as a result of an increase in volume due to favorable business conditions caused by the impact of security failures, data breaches, cyber extortion, or privacy liability impacting other businesses, loss of market, or any other consequential loss. Further, due consideration will be given to the following when calculating reputational harm loss:\n1. the experience of your business before the adverse publication and probable experience thereafter during the reputation indemnity period had there been no adverse publication and to the continuation of normal charges and expenses that would have existed had no adverse publication occurred; and 2. any reputational harm loss made up or recovered during, or within a reasonable time after the end of, the reputation indemnity period."
+  },
+  {
+    "id": "IX.Reputation indemnity period",
+    "title": "Reputation indemnity period",
+    "page": 27,
+    "text": "means the one hundred and eighty (180) day period that begins at the conclusion of the reputation waiting period."
+  },
+  {
+    "id": "IX.Reputation waiting period",
+    "title": "Reputation waiting period",
+    "page": 27,
+    "text": "means the amount of time set forth in Item 5.N. of the Declarations that must elapse after the date upon which the adverse publication was first published. The reputation waiting period cannot be insured."
+  },
+  {
+    "id": "IX.Restoration costs",
+    "title": "Restoration costs",
+    "page": 28,
+    "text": "means:\n1. the reasonable and necessary costs you incur to replace, restore, or recreate digital assets to the level or condition at which they existed prior to a security failure or systems failure; or 2. the cost for the most current version of digital assets if it is substantially equivalent to (or less than) the original cost of digital assets;\nif such digital assets cannot be replaced, restored, or recreated, then restoration costs will be limited to the actual, reasonable, and necessary costs you incur to reach this determination.\nRestoration costs does not mean and will not include:\n1. any costs or expenses incurred to identify, remove, or remediate computer program errors or vulnerabilities; 2. the economic or market value of any digital assets, including trade secrets, or the costs to re-perform any work product contained within any digital assets; or 3. costs incurred to acquire or install digital assets which did not exist immediately prior to the security failure or system failure."
+  },
+  {
+    "id": "IX.Retroactive date",
+    "title": "Retroactive date",
+    "page": 28,
+    "text": "means the date specified in Item 9. of the Declarations."
+  },
+  {
+    "id": "IX.Security failure",
+    "title": "Security failure",
+    "page": 28,
+    "text": "means the failure of security of computer systems which results in:\n1. loss, alteration, corruption, or damage to software, applications, or electronic data existing in computer systems; 2. transmission of malicious code from computer systems to third party computer systems that are not owned, operated, or controlled by the named insured or subsidiary; or 3. a denial of service attack on the named insured's or subsidiary's computer systems; or 4. access to or use of computer systems in a manner that is not authorized by you, including when resulting from the theft of a password.\nSecurity failure does not mean and will not include any failure of computers, related peripheral components, or mobile devices that are owned or leased by an employee and not used for the business operations of the named insured or subsidiary."
+  },
+  {
+    "id": "IX.Senior executive",
+    "title": "Senior executive",
+    "page": 28,
+    "text": "means any partner, principal, director, executive board member, in-house counsel, risk manager, chief information officer, chief information security officer, chief privacy officer, chief financial officer, chief executive officer, chief operating officer, or functional equivalent, but only while acting on your behalf in the scope of your business operations."
+  },
+  {
+    "id": "IX.Service fraud loss",
+    "title": "Service fraud loss",
+    "page": 28,
+    "text": "means direct financial loss that you incur as the result of being charged a fee for the fraudulent use of business services, including fraudulent use arising from cryptojacking."
+  },
+  {
+    "id": "IX.Service provider",
+    "title": "Service provider",
+    "page": 28,
+    "text": "means any third party that is responsible for the processing, maintenance, protection, or storage of digital assets pursuant to a written contract."
+  },
+  {
+    "id": "IX.Subsidiary",
+    "title": "Subsidiary",
+    "page": 29,
+    "text": "means any organization in which the named insured:\n1. owns or controls either directly or indirectly, on or before the inception date of this Policy, 50% or more of the outstanding voting stock or shareholder voting power, or has the right to elect or appoint the majority of the board of directors or persons to an equivalent executive management function; and 2. has recognized the revenues in the application for this Policy.\nAn organization ceases to be a subsidiary on the date, during the policy period, that the named insured ceases to own or control, directly or indirectly, 50% or more of the outstanding voting stock or shareholder voting power, or ceases to control the right to elect or appoint the majority of the board of directors or persons to equivalent executive management functions.\nThe named insured will give written notice to us of any acquisition or creation of an organization with ownership interest greater than 50% no later than sixty (60) days after the effective date of such acquisition or creation. Automatic coverage of such organization is granted until the end of the policy period subject to the following criteria:\n1. the newly created or acquired organization has substantially similar business operations; 2. the new organization’s gross revenue is equal to or less than 10% of the total gross revenue the named insured has listed on the application for this Policy; and 3. prior to the effective date of such acquisition or creation, no senior executive of the named insured or of the acquired or created organization, knew or could have reasonably expected that a claim would be made or coverage triggered under any Insuring Agreement in Section II, WHAT WE COVER.\nWhere such acquisition or creation does not qualify for the automatic coverage described above, no coverage is granted and such acquired or created organization is not included under this Policy unless and until agreed by us in writing. Upon receipt of notice of such acquisition or creation, we may, at our sole option, agree to appropriately endorse this Policy subject to additional premium and/or changed terms and conditions."
+  },
+  {
+    "id": "IX.Systems failure",
+    "title": "Systems failure",
+    "page": 29,
+    "text": "means any:\n1. unintentional, unplanned, or unexpected computer systems disruption, damage, or failure where the proximate cause is not a security failure, loss of or damage to any physical equipment or property, or planned or scheduled outage or maintenance of computer systems or a third party's computer systems (including downtime that is the result of a planned outage lasting longer than initially expected); or 2. disruption or voluntary shutdown of computer systems by you, with our prior consent, in order to mitigate covered loss under this Policy.\nSystems failure does not include any:\n1. failure of hosted computer systems that results in an outage that extends beyond the services being provided to you by hosted computer systems; 2. suspension, cancellation, revocation, or failure to renew any domain names or uniform resource locators; 3. failure to adequately anticipate or capacity plan for normal and above operational demand for computer systems except where this demand is a denial of service attack; 4. failure of any computer hardware that has been declared as end-of-life by the original equipment manufacturer; 5. design failure or manufacturing defect in third party computer software or computer hardware."
+  },
+  {
+    "id": "IX.Tangible property",
+    "title": "Tangible property",
+    "page": 30,
+    "text": "means items or objects that can be felt or touched. Tangible property does not include:\n1. digital assets; 2. any form of intellectual property, including trade secrets; or 3. money or securities.\nThe value of any covered tangible property will be the cost to replace such tangible property with property of comparable material and quality. The replacement cost value for any tangible property does not include any profit or mark-up that you are unable to collect as a result of the loss of tangible property."
+  },
+  {
+    "id": "IX.Third party corporate information",
+    "title": "Third party corporate information",
+    "page": 30,
+    "text": "means any information of a third party held by you which is not available to the general public and is provided to you subject to a mutually executed written confidentiality agreement between you and the third party or which you are legally required to maintain in confidence. However, third party corporate information does not include personally identifiable information."
+  },
+  {
+    "id": "IX.Waiting period",
+    "title": "Waiting period",
+    "page": 30,
+    "text": "means the number of hours set forth in Item 5.J. of the Declarations."
+  },
+  {
+    "id": "IX.We, us, or our",
+    "title": "We, us, or our",
+    "page": 30,
+    "text": "means the insurer(s) providing this Policy."
+  }
+]

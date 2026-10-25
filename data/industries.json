@@ -1,0 +1,50 @@
+[
+  {
+    "id": "dental",
+    "industry": "Dental office",
+    "data_held": "Patient records, insurance details, payment cards, staff payroll",
+    "systems_relied_on": "Practice management and scheduling software, digital imaging, email",
+    "exposure": "A dental office holds the kind of data criminals want most: names, birth dates, insurance IDs and treatment history. If ransomware locks the practice management system, the office can't see the schedule, chart, or bill, so chairs sit empty until systems come back. A breach also means notifying patients and answering to regulators.",
+    "common_incidents": [
+      "Ransomware locks the scheduling and patient records system",
+      "A phishing email gives an attacker access to the office email account, exposing patient information",
+      "A spoofed email from a 'supplier' redirects a payment"
+    ]
+  },
+  {
+    "id": "coffee",
+    "industry": "Coffee roaster and shop",
+    "data_held": "Payment cards (in-store and online), wholesale customer accounts, staff payroll",
+    "systems_relied_on": "Point-of-sale system, online store, wholesale invoicing and email",
+    "exposure": "A coffee business runs on its point-of-sale system and online store. If either goes down, sales stop that day. Card data from the online shop brings payment card industry rules and potential fines after a breach. Wholesale accounts mean regular invoices and payments, which is exactly what payment-redirection scams target.",
+    "common_incidents": [
+      "Malware on the point-of-sale system or online store skims customer card numbers",
+      "A fake 'updated bank details' email from a green coffee supplier redirects a payment",
+      "An outage at the POS or e-commerce provider halts sales"
+    ]
+  },
+  {
+    "id": "accounting",
+    "industry": "Accounting and bookkeeping firm",
+    "data_held": "Client Social Security numbers, tax returns, bank and payroll details, staff records",
+    "systems_relied_on": "Tax and accounting software, client file-sharing portal, email",
+    "exposure": "An accounting firm holds some of the most valuable data a criminal can steal: Social Security numbers, tax returns and bank details for every client. A breach means notifying clients and can bring regulatory scrutiny. Ransomware during tax season can stop work at the busiest and most profitable time of year, and the firm's role in moving client money makes it a target for wire fraud.",
+    "common_incidents": [
+      "Ransomware locks tax software and client files in the weeks before the filing deadline",
+      "A phishing email gives an attacker access to the client portal, exposing tax returns",
+      "A spoofed email that looks like it's from a client requests an urgent wire transfer"
+    ]
+  },
+  {
+    "id": "preschool",
+    "industry": "Independent preschool",
+    "data_held": "Children's enrollment records, health and allergy information, parent contact and payment details, staff records",
+    "systems_relied_on": "Enrollment and billing software, parent communication app, email",
+    "exposure": "A preschool holds sensitive information about young children and their families, and parents expect it to be protected. A breach means notifying families and can damage trust quickly in a small community. Tuition payments and parent emails make the school a target for scams that impersonate the school or redirect payments.",
+    "common_incidents": [
+      "A compromised email account sends parents fake tuition payment instructions",
+      "Enrollment software is breached, exposing children's records",
+      "Ransomware locks billing and family records at the start of a semester"
+    ]
+  }
+]

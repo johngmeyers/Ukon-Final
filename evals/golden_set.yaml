@@ -1,0 +1,132 @@
+# Golden eval set for the cyber brief prototype.
+# Source: Coalition Cyber Policy 3.0 specimen (CYUSP-00PF-1022-01) + its declarations (CYUSP-00DC-1022-01).
+# Base wording only; state endorsements are stripped, so answers follow the base form.
+# Section IDs follow the scheme in PROTOTYPE_SPEC.md. Hand-check each expected section
+# against data/specimen_sections.json once it is built.
+#
+# expected: answer        -> specimen settles it; must cite.
+# expected: route_to_cpl  -> specimen does not settle it; must route with a drafted CPL message.
+# on_quote: false         -> coverage exists in the form but DEC.Item5 shows N/A.
+
+client_id: c1
+questions:
+
+  # ---------- Answerable from the specimen (10) ----------
+
+  - id: q01
+    question: "If my client gets hit with ransomware, will this pay the ransom?"
+    expected: answer
+    expected_sections: ["II.I", "IX.Cyber extortion expenses"]
+    must_include: ["prior written consent"]
+    must_not_claim: ["no consent needed", "automatically pays"]
+    why: "The most common agent question. The consent condition is the detail agents get wrong."
+
+  - id: q02
+    question: "Does it cover lost income if their systems go down after an attack?"
+    expected: answer
+    expected_sections: ["II.J", "DEC.Item5", "IX.Indemnity period"]
+    must_include: ["8 hours", "180 days"]
+    must_not_claim: ["from the first minute", "unlimited"]
+    why: "Tests whether the answer picks up the waiting period from the declarations and the 180-day cap from the definitions."
+
+  - id: q03
+    question: "An employee wired $40,000 to a fake vendor after a spoofed email. Is that covered?"
+    expected: answer
+    expected_sections: ["II.Q", "IX.Funds transfer fraud", "DEC.Item5"]
+    must_include: ["$250,000"]
+    must_not_claim: ["$1,000,000 for wire fraud", "full policy limit"]
+    why: "Covered, but under a lower sublimit. The classic place an agent overstates coverage."
+
+  - id: q04
+    question: "After a breach, does it pay to notify customers and give them credit monitoring?"
+    expected: answer
+    expected_sections: ["II.G", "IX.Breach response costs"]
+    must_include: ["two years", "one year"]
+    must_not_claim: ["lifetime monitoring"]
+    why: "Checks that the answer finds the specific items inside a long definition."
+
+  - id: q05
+    question: "If customers sue because their data was stolen, does the policy defend them?"
+    expected: answer
+    expected_sections: ["II.A", "V.Defense"]
+    must_include: ["claims made"]
+    must_not_claim: ["any lawsuit ever"]
+    why: "Third-party liability; the answer should mention the claims-made-and-reported basis."
+
+  - id: q06
+    question: "If a flood takes out their server room, is that covered here?"
+    expected: answer
+    expected_sections: ["III.L"]
+    must_include: ["not covered"]
+    must_not_claim: ["covered under business interruption"]
+    why: "A clear exclusion. The right answer is a confident no, with a citation."
+
+  - id: q07
+    question: "The power company has an outage and the business loses a day. Does cyber cover that?"
+    expected: answer
+    expected_sections: ["III.S"]
+    must_include: ["not covered"]
+    must_not_claim: ["systems failure covers utility outages"]
+    why: "Sounds like a systems failure, but the third-party mechanical failure exclusion applies."
+
+  - id: q08
+    question: "Malware bricked their laptops. Will the policy pay to replace them?"
+    expected: answer
+    expected_sections: ["II.M", "IX.Computer replacement costs", "III.R"]
+    must_include: ["prior written consent"]
+    must_not_claim: ["any damaged hardware"]
+    why: "Covered as an exception to the tangible property exclusion. Tests reading an exclusion together with its carve-out."
+
+  - id: q09
+    question: "An employee's personal phone got hacked. Is that covered?"
+    expected: answer
+    expected_sections: ["IX.Security failure"]
+    must_include: ["not used for the business"]
+    must_not_claim: ["all employee devices are covered"]
+    why: "The answer depends on a definition, not an exclusion. Good test of careful reading."
+
+  - id: q10
+    question: "Someone set up a fake website pretending to be my client. Are they covered?"
+    expected: answer
+    on_quote: false
+    expected_sections: ["II.S", "DEC.Item5"]
+    must_include: ["not included in this quote"]
+    must_not_claim: ["yes, it's covered"]
+    why: "Impersonation repair costs exist in the form but are N/A on this quote. Tests policy-versus-quote awareness."
+
+  # ---------- Should route to a CPL (5) ----------
+
+  - id: q11
+    question: "Does my client need multi-factor authentication to get this policy?"
+    expected: route_to_cpl
+    expected_sections: []
+    must_not_claim: ["MFA is not required", "MFA is required"]
+    why: "An underwriting and application question. The specimen doesn't state it, and the AI must never answer security questions for the client."
+
+  - id: q12
+    question: "How much more would it cost to go up to a $2 million limit?"
+    expected: route_to_cpl
+    expected_sections: []
+    must_not_claim: ["$"]
+    why: "Pricing. The model must never generate a premium."
+
+  - id: q13
+    question: "Is this better than the cyber coverage already in their business owner's policy?"
+    expected: route_to_cpl
+    expected_sections: []
+    must_not_claim: ["their BOP doesn't cover", "this is better"]
+    why: "Needs the other policy's wording, which we don't have."
+
+  - id: q14
+    question: "How fast does Coalition pay out a ransomware claim?"
+    expected: route_to_cpl
+    expected_sections: []
+    must_not_claim: ["within 30 days", "within 48 hours"]
+    why: "Claims timing isn't in the specimen. Tests refusing to invent operational facts."
+
+  - id: q15
+    question: "Can we write this for a client in New York?"
+    expected: route_to_cpl
+    expected_sections: []
+    must_not_claim: ["available in all states", "not available in New York"]
+    why: "State availability isn't in the policy form. A CPL or the carrier's appetite guide answers it."

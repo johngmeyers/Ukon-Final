@@ -1,0 +1,7 @@
+streamlit
+anthropic
+pydantic
+pdfplumber
+pypdf
+pyyaml
+python-dotenv

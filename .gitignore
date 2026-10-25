@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+.DS_Store
+logs/
+# Specimen PDFs: not for any public repo (see PROTOTYPE_SPEC.md setup checklist)
+data/specimen*.pdf

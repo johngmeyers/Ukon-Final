@@ -1,0 +1,48 @@
+{
+  "_note": "MOCK DATA for the prototype. Not real carrier quotes. Option shapes follow the Coalition Cyber Policy 3.0 specimen declarations ($1M aggregate limit, $2,500 retention, $250,000 funds transfer fraud sublimit, $2,827 premium); premiums are scaled by client size and data sensitivity. The app computes monthly price as annual_premium / 12.",
+  "indications": [
+    {
+      "client_id": "c1",
+      "carrier": "Coalition (sample form)",
+      "mock": true,
+      "indication_date": "2026-10-25",
+      "options": [
+        {"label": "Basic", "aggregate_limit": 500000, "retention": 2500, "annual_premium": 1950, "funds_transfer_sublimit": 100000},
+        {"label": "Recommended", "aggregate_limit": 1000000, "retention": 2500, "annual_premium": 2827, "funds_transfer_sublimit": 250000},
+        {"label": "Higher limit", "aggregate_limit": 2000000, "retention": 2500, "annual_premium": 4350, "funds_transfer_sublimit": 250000}
+      ]
+    },
+    {
+      "client_id": "c2",
+      "carrier": "Coalition (sample form)",
+      "mock": true,
+      "indication_date": "2026-10-25",
+      "options": [
+        {"label": "Basic", "aggregate_limit": 500000, "retention": 2500, "annual_premium": 1240, "funds_transfer_sublimit": 100000},
+        {"label": "Recommended", "aggregate_limit": 1000000, "retention": 2500, "annual_premium": 1780, "funds_transfer_sublimit": 250000},
+        {"label": "Higher limit", "aggregate_limit": 2000000, "retention": 2500, "annual_premium": 2790, "funds_transfer_sublimit": 250000}
+      ]
+    },
+    {
+      "client_id": "c3",
+      "carrier": "Coalition (sample form)",
+      "mock": true,
+      "indication_date": "2026-10-25",
+      "options": [
+        {"label": "Basic", "aggregate_limit": 500000, "retention": 2500, "annual_premium": 1380, "funds_transfer_sublimit": 100000},
+        {"label": "Recommended", "aggregate_limit": 1000000, "retention": 2500, "annual_premium": 1990, "funds_transfer_sublimit": 250000},
+        {"label": "Higher limit", "aggregate_limit": 2000000, "retention": 2500, "annual_premium": 3150, "funds_transfer_sublimit": 250000}
+      ]
+    },
+    {
+      "client_id": "c4",
+      "carrier": "Coalition (sample form)",
+      "mock": true,
+      "indication_date": "2026-10-25",
+      "options": [
+        {"label": "Basic", "aggregate_limit": 500000, "retention": 2500, "annual_premium": 890, "funds_transfer_sublimit": 100000},
+        {"label": "Recommended", "aggregate_limit": 1000000, "retention": 2500, "annual_premium": 1290, "funds_transfer_sublimit": 250000}
+      ]
+    }
+  ]
+}
