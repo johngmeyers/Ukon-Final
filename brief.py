@@ -127,15 +127,15 @@ def fill_price(text: str, ind: dict) -> str:
     return text.replace(PRICE_TOKEN, monthly_price(ind))
 
 
-def user_content(client: dict, industry: dict, ind: dict) -> str:
+def context_block(client: dict, industry: dict, ind: dict) -> str:
+    """Client, industry note and quote options for the user message (shared with qa.py)."""
     # Premiums are withheld: the model never sees a price, so it can't repeat one.
     options = [{k: v for k, v in o.items() if k != "annual_premium"} for o in ind["options"]]
     quote = {"carrier": ind["carrier"], "mock": ind["mock"], "options": options}
     return (
         f"<client>\n{json.dumps(client, indent=2)}\n</client>\n\n"
         f"<industry_note>\n{json.dumps(industry, indent=2)}\n</industry_note>\n\n"
-        f"<quote_options>\n{json.dumps(quote, indent=2)}\n</quote_options>\n\n"
-        "Write the brief."
+        f"<quote_options>\n{json.dumps(quote, indent=2)}\n</quote_options>"
     )
 
 
@@ -149,7 +149,7 @@ def generate(client_id: str):
         kind="brief",
         client_id=client_id,
         instructions=INSTRUCTIONS,
-        user_content=user_content(client, industry_note(client["industry"]), ind),
+        user_content=context_block(client, industry_note(client["industry"]), ind) + "\n\nWrite the brief.",
         output_model=Brief,
     )
     verified, report = verify_brief(brief, client_id)
