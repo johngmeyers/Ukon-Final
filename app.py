@@ -161,7 +161,6 @@ table.opts th { font-weight: 700; } table.opts th, table.opts td { border-bottom
 a.mailbtn { display: inline-flex; align-items: center; gap: 8px; background: #0b57d0; color: #fff !important;
   border-radius: 18px; padding: 8px 18px; text-decoration: none !important; font: 500 14px Roboto, Arial, sans-serif; }
 a.mailbtn:hover { background: #0a4cb8; box-shadow: 0 1px 3px rgba(60,64,67,.3); }
-[class*="st-key-go-"] button { border-radius: 18px; border: 1px solid #747775; background: #fff; color: #0b57d0; font-size: 13px; }
 [data-testid="stForm"] { border: none; border-radius: 16px; box-shadow: 0 1px 3px rgba(60,64,67,.3), 0 4px 8px 3px rgba(60,64,67,.15);
   margin-left: 56px; width: calc(100% - 56px); padding: 12px 16px; }
 [data-testid="stFormSubmitButton"] button { border-radius: 18px; padding: 0 24px; font-weight: 500; }
@@ -385,10 +384,6 @@ if state.open == DIGEST:
                 f'<span class="chip">Inbox</span></div>'
                 + message("av-desk", "U", SENDER, SENDER_ADDR, "me", long_date(first_ind, sent_time(DIGEST, clients)),
                           body))
-        cols = st.columns([0.5] + [2] * len(clients))
-        for col, c in zip(cols[1:], clients):
-            col.button(f"Open {c['name']}", key=f"go-{c['id']}", on_click=open_item, args=(c["id"],),
-                       use_container_width=True)
     st.stop()
 
 # ---------------------------------------------------------------- brief (unchanged logic)
