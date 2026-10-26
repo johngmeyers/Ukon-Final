@@ -1,7 +1,7 @@
 [
   {
     "id": "c1",
-    "name": "Icon Dental",
+    "name": "Ivy Lane Dental",
     "industry": "dental",
     "state": "CO",
     "city": "Denver area",
@@ -12,7 +12,7 @@
   },
   {
     "id": "c2",
-    "name": "Sweet Bloom Coffee Roasters",
+    "name": "Sweet Fern Coffee Roasters",
     "industry": "coffee",
     "state": "CO",
     "city": "Denver area",
@@ -23,7 +23,7 @@
   },
   {
     "id": "c3",
-    "name": "GCK Accounting",
+    "name": "GKL Accounting",
     "industry": "accounting",
     "state": "CO",
     "city": "Denver",
@@ -34,7 +34,7 @@
   },
   {
     "id": "c4",
-    "name": "Denver Cooperative Preschool",
+    "name": "Front Range Cooperative Preschool",
     "industry": "preschool",
     "state": "CO",
     "city": "Denver",

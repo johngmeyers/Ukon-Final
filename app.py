@@ -7,6 +7,7 @@ Run:  .venv/bin/streamlit run app.py
 """
 import json
 import re
+import threading
 from datetime import date
 from html import escape
 from urllib.parse import quote
@@ -33,6 +34,7 @@ state.setdefault("answers", {})     # client_id -> list of Q&A replies, oldest f
 state.setdefault("last_call", None)  # {"kind", "cost_usd", "latency_s"} for the footer
 state.setdefault("open", None)       # None = inbox list; else DIGEST or a client id
 state.setdefault("read", set())      # opened inbox items
+state.setdefault("questions_asked", 0)
 
 
 def icon(path: str, size: int = 20, color: str = "#444746") -> str:
@@ -80,7 +82,6 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 .topbar .search { flex: 1; max-width: 720px; display: flex; align-items: center; gap: 12px; background: #e9eef6;
   border-radius: 24px; height: 46px; padding: 0 16px; color: #444746; font-size: 16px; }
 .topbar .right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
-.proto { font-size: 12px; color: #444746; border: 1px solid #c4c7c5; border-radius: 8px; padding: 3px 8px; background: #fff; }
 .avatar { width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
   color: #fff; font-weight: 500; font-size: 14px; flex: none; }
 .av-desk { background: #1a73e8; } .av-me { background: #188038; }
@@ -256,6 +257,30 @@ def options_table(ind: dict) -> str:
             f'<div class="note">{escape(ind["carrier"])}. Mock indication, not a real carrier quote.</div>')
 
 
+@st.cache_resource
+def daily_usage() -> dict:
+    """Question count shared by every visitor's session in this server process."""
+    return {"day": None, "count": 0, "lock": threading.Lock()}
+
+
+def question_allowed() -> str | None:
+    """None if a reply may be sent; otherwise why not. Limits apply to the public demo only."""
+    if not config.PUBLIC_DEMO:
+        return None
+    if state.questions_asked >= config.MAX_QUESTIONS_PER_SESSION:
+        return f"You've reached this demo's limit of {config.MAX_QUESTIONS_PER_SESSION} questions per visit."
+    usage = daily_usage()
+    with usage["lock"]:
+        today = date.today().isoformat()
+        if usage["day"] != today:
+            usage.update(day=today, count=0)
+        if usage["count"] >= config.MAX_QUESTIONS_PER_DAY:
+            return "The demo has reached today's question limit. Please try again tomorrow."
+        usage["count"] += 1
+    state.questions_asked += 1
+    return None
+
+
 def open_item(item) -> None:
     state.open = item
     if item:
@@ -274,7 +299,7 @@ st.html(f"""
 <div class="topbar">
   <div class="brand">{icon(I_MENU, 24)}{icon(I_MAIL, 30, "#5f6368")}<span>Mail</span></div>
   <div class="search">{icon(I_SEARCH, 22)}<span>Search mail</span></div>
-  <div class="right">{'' if state.open is None else '<span class="proto">Prototype: email view</span>'}
+  <div class="right">
     <span class="avatar av-me" title="{escape(agent)}">{escape(initials)}</span></div>
 </div>
 """)
@@ -294,12 +319,16 @@ with nav_col:
       <div class="item">{icon(I_LABEL, 20, "#1a73e8")}Cyber renewals</div>
     </div>
     """)
-    controls = st.expander("Demo controls")
-    with controls:
-        use_cache = st.toggle("Use cached brief", value=True,
-                              help="Load the saved brief instead of calling the API. Replies stay live.")
-        regenerate = st.button("Regenerate brief", disabled=use_cache or state.open in (None, DIGEST))
-        st.caption(f"Model: `{config.MODEL}`")
+    if config.PUBLIC_DEMO:
+        # Shared link: visitors only read cached briefs; the only live calls are replies.
+        controls, use_cache, regenerate = None, True, False
+    else:
+        controls = st.expander("Demo controls")
+        with controls:
+            use_cache = st.toggle("Use cached brief", value=True,
+                                  help="Load the saved brief instead of calling the API. Replies stay live.")
+            regenerate = st.button("Regenerate brief", disabled=use_cache or state.open in (None, DIGEST))
+            st.caption(f"Model: `{config.MODEL}`")
 
 panel = main_col.container(key="panel")
 
@@ -376,7 +405,8 @@ with panel:
         if cached:
             result = cached
         else:
-            st.error(f"No cached brief for {client['name']} yet. Turn off Use cached brief to generate one live.")
+            st.error(f"This email isn't available right now." if config.PUBLIC_DEMO else
+                     f"No cached brief for {client['name']} yet. Turn off Use cached brief to generate one live.")
     else:
         if regenerate:
             state.briefs.pop(client_id, None)
@@ -396,12 +426,13 @@ with panel:
                      "Use Regenerate brief or Use cached brief under Demo controls.")
             result = None
 
-with controls:
-    if use_cache and cached:
-        st.caption(f"Cached {cached['saved_at']} with {cached['model']}")
-    if result and not use_cache and st.button("Save this brief to cache"):
-        save_cache(client_id, result["brief"], result["report"], result["stats"])
-        st.success("Saved.")
+if controls is not None:
+    with controls:
+        if use_cache and cached:
+            st.caption(f"Cached {cached['saved_at']} with {cached['model']}")
+        if result and not use_cache and st.button("Save this brief to cache"):
+            save_cache(client_id, result["brief"], result["report"], result["stats"])
+            st.success("Saved.")
 
 # ---------------------------------------------------------------- client email
 
@@ -472,9 +503,14 @@ with panel:
 
     with st.form("reply", clear_on_submit=True):
         question = st.text_area("Reply", placeholder="Reply to ask a question about this policy",
-                                label_visibility="collapsed", height=90)
+                                label_visibility="collapsed", height=90, max_chars=config.MAX_QUESTION_CHARS)
         submitted = st.form_submit_button("Send", type="primary")
-    if submitted and question.strip():
+    if config.PUBLIC_DEMO:
+        st.caption("Demo only: please don't enter real client information.")
+    blocked = question_allowed() if submitted and question.strip() else None
+    if blocked:
+        st.warning(blocked)
+    elif submitted and question.strip():
         q = question.strip()
         with st.spinner("Checking the policy..."):
             try:
@@ -486,7 +522,9 @@ with panel:
         state.answers.setdefault(client_id, []).append(item)
         st.rerun()
 
-    # Footer
+    # Footer (local runs only: visitors don't need cost details)
+    if config.PUBLIC_DEMO:
+        st.stop()
     last = state.last_call
     foot = []
     if use_cache and result:

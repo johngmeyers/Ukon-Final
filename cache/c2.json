@@ -1,46 +1,50 @@
 {
   "model": "claude-sonnet-5-5",
-  "saved_at": "2026-10-25T15:19:39+00:00",
+  "saved_at": "2026-10-26T00:08:43+00:00",
   "brief": {
-    "why_it_matters": "Sweet Bloom takes cards in the shop and online, and sells wholesale on invoice. If the point-of-sale or online store goes down, sales stop that day. A fake 'new bank details' email from a green coffee supplier is also a real risk.",
-    "opener": "Hi, it's Sam. Your cyber renewal is coming up in January. I want to walk you through what the Recommended option covers for a roaster with a POS, an online store and wholesale invoices, at {MONTHLY_PRICE}. It should take about five minutes.",
+    "why_it_matters": "A coffee roaster lives on its point-of-sale system and online store, so a day offline means lost sales. Card data from the online shop brings payment card rules and possible fines after a breach. Wholesale invoices and supplier payments are prime targets for fake bank-detail emails.",
+    "opener": "Hi, it's Sam Rivera. Your cyber policy renews in January, and I wanted to walk you through the options before it does. Your shop depends on the POS and online store, and you handle card data and wholesale payments. The Recommended option comes to {MONTHLY_PRICE}, and I'd like to show you what it includes and why it fits.",
     "talking_points": [
       {
-        "text": "If a cyber attack or system failure stops your POS or online store, the policy can pay lost profit and extra costs after the waiting period. This quote shows an 8 hour waiting period, or 1 hour in the enhanced case.",
+        "text": "If malware hits your POS or online store, the policy pays for forensics, customer notification and similar response costs, with a $2,500 retention on the Recommended option.",
         "citations": [
           {
-            "section_id": "II.J",
-            "quote": "business interruption loss; 2. contingent business interruption loss; and 3. extra expenses"
+            "section_id": "II.G",
+            "quote": "We will pay on your behalf breach response costs resulting from an actual or suspected security failure or data breach"
           },
           {
             "section_id": "DEC.Item5",
-            "quote": "i. Waiting period: 8 hours | ii. Enhanced waiting period: 1 hour"
+            "quote": "G. BREACH RESPONSE COSTS | Limit: $1,000,000 | Retention: $2,500"
           }
         ]
       },
       {
-        "text": "If card data from your online shop is breached, the quote includes PCI fines and assessments, with a $1,000,000 limit and a $2,500 retention.",
+        "text": "If a card data breach leads to card-brand fines under your merchant agreement, PCI fines and assessments are included in this quote.",
         "citations": [
+          {
+            "section_id": "II.C",
+            "quote": "We will pay on your behalf claim expenses and PCI fines and assessments that you become legally obligated to pay"
+          },
           {
             "section_id": "DEC.Item5",
             "quote": "C. PCI FINES AND ASSESSMENTS | Limit: $1,000,000 | Retention: $2,500"
-          },
-          {
-            "section_id": "II.C",
-            "quote": "PCI fines and assessments that you become legally obligated to pay resulting from a claim against you for a data breach compromising payment card data"
           }
         ]
       },
       {
-        "text": "Fake bank-detail emails are covered as funds transfer fraud, with a $250,000 limit on the Recommended option. Basic drops that to $100,000.",
+        "text": "A fake 'new bank details' email from a supplier is covered under funds transfer fraud, with a $250,000 limit on the Recommended option. Lost income from a security-caused outage is covered after an 8-hour waiting period.",
         "citations": [
+          {
+            "section_id": "II.Q",
+            "quote": "We will pay funds transfer loss that you incur resulting from a funds transfer fraud first discovered by you during the policy period."
+          },
           {
             "section_id": "DEC.Item5",
             "quote": "Q. FUNDS TRANSFER FRAUD AND SOCIAL ENGINEERING | Limit: $250,000 | Retention: $2,500"
           },
           {
-            "section_id": "II.Q",
-            "quote": "We will pay funds transfer loss that you incur resulting from a funds transfer fraud first discovered by you during the policy period."
+            "section_id": "DEC.Item5",
+            "quote": "i. Waiting period: 8 hours"
           }
         ]
       }
@@ -48,45 +52,41 @@
     "objections": [
       {
         "objection": "We're too small to be a target.",
-        "response": "Small shops that take cards and pay suppliers by wire are easy targets because they often have fewer defenses. Attackers run automated scams and don't pick by size. The policy also gives you a breach hotline for the first 72 hours.",
+        "response": "Small shops are often chosen because they hold card data and pay invoices by email. The policy responds to a breach or fraud no matter the size of the business, and it covers response costs and fines.",
         "citations": [
           {
-            "section_id": "II.F",
-            "quote": "We will pay on your behalf breach response services resulting from an actual or suspected security failure, data breach, cyber extortion, funds transfer fraud, or impersonation fraud"
+            "section_id": "II.G",
+            "quote": "We will pay on your behalf breach response costs resulting from an actual or suspected security failure or data breach"
           }
         ]
       },
       {
         "objection": "My IT person handles security.",
-        "response": "That's good, but insurance covers the cost when something still goes wrong. It adds forensics, legal help and notification costs that an IT person doesn't pay for. Forensics from Coalition Incident Response carries no retention when you use them.",
+        "response": "Good, but even strong IT can't stop every incident. This policy pays for the costs when something still gets through, such as forensics, notification and extortion response.",
         "citations": [
           {
-            "section_id": "IX.Breach response costs",
-            "quote": "computer forensic professional fees and expenses to determine the cause and extent of a security failure or data breach"
-          },
-          {
-            "section_id": "VI.Retention",
-            "quote": "will not be subject to any Retention"
+            "section_id": "II.I",
+            "quote": "We will pay on your behalf cyber extortion expenses resulting from cyber extortion first discovered by you during the policy period."
           }
         ]
       },
       {
         "objection": "Isn't this already in my business policy?",
-        "response": "I can't see what your other policy says, so let's check it together. This policy is written for cyber events like breaches, extortion and system outages. Ask your property carrier whether they cover those events, and note this form says it applies excess of other valid insurance, except for breach response.",
+        "response": "I can't say what your other policy includes, so let's check it together. This policy is written for cyber events like data breaches and payment-redirection fraud, and it also names tangible property damage as something it excludes except for bricked devices.",
         "citations": [
           {
-            "section_id": "VIII.Other insurance",
-            "quote": "this Policy will apply excess of any other valid and collectible insurance available to you"
+            "section_id": "III.R",
+            "quote": "Any injury or damage to, destruction, impairment, or loss of use of any tangible property"
           }
         ]
       },
       {
-        "objection": "The $2,500 retention is a lot for us.",
-        "response": "The retention is what you pay first on a covered loss. Breach response services have a $0 retention, and Coalition forensics carry no retention if you use them.",
+        "objection": "Why not choose the Basic option?",
+        "response": "Basic has a lower aggregate limit and only a $100,000 funds transfer sublimit. Recommended raises that to $250,000 and the aggregate to $1,000,000, with the same $2,500 retention. Claim expenses also reduce the limit, so a higher limit leaves more room.",
         "citations": [
           {
-            "section_id": "DEC.Item5",
-            "quote": "F. BREACH RESPONSE SERVICES | Limit: Available for 72 hours following notification to the Breach Response Services Advisor | Retention: $0"
+            "section_id": "I.Introduction",
+            "quote": "Claim expenses reduce the applicable Limits of Liability, are subject to retentions, and may exhaust the applicable Limits of Liability."
           }
         ]
       }
@@ -94,15 +94,19 @@
   },
   "report": {
     "removed_claims": [],
-    "rejected_citations": []
+    "rejected_citations": [],
+    "relabeled_citations": []
   },
   "stats": {
-    "attempts": 1,
-    "input_tokens": 1456,
+    "attempts": 2,
+    "input_tokens": 3004,
     "cache_write_tokens": 0,
-    "cache_read_tokens": 31567,
-    "output_tokens": 1421,
-    "cost_usd": 0.023435,
-    "latency_s": 12.76
+    "cache_read_tokens": 63134,
+    "output_tokens": 2551,
+    "cost_usd": 0.044144,
+    "latency_s": 17.89,
+    "validation_errors": [
+      "- talking_points.0.citations.1.quote: Value error, quote must be 5-30 words, got 4"
+    ]
   }
 }

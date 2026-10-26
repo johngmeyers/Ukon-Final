@@ -82,11 +82,11 @@ Splitting can be heuristic (regex on the lettered headings and bold definition t
 
 ### Clients (`data/clients.json`)
 
-4 real public businesses, hand-picked, one per industry. No personal data. Revenue as a band, not a figure.
+4 fictional businesses, one per industry (originally real public businesses; renamed so a public demo link never pairs real companies with mock prices). No personal data. Revenue as a band, not a figure.
 
 ```json
 [
-  {"id": "c1", "name": "<real dental practice>", "industry": "dental", "state": "CO", "revenue_band": "$1M-$3M", "employees": "10-25", "renewal_month": "December", "agent": "Sam Rivera"}
+  {"id": "c1", "name": "Ivy Lane Dental", "industry": "dental", "state": "CO", "revenue_band": "$1M-$3M", "employees": "10-25", "renewal_month": "December", "agent": "Sam Rivera"}
 ]
 ```
 
@@ -205,6 +205,15 @@ One screen:
 ## Cost and latency logging
 
 Log input and output tokens per call, and compute cost from per-token prices in `config.py`. Show it in the footer and write it to `logs/calls.csv`. A real "cents per brief" number answers the CFO's AI cost-economics question.
+
+## Public demo mode
+
+The shared link has no login, so `PUBLIC_DEMO` (in `config.py`, on by default; run locally with `PUBLIC_DEMO=0` to turn it off) makes it safe to share:
+- Briefs load from `cache/` only. The demo controls (cache toggle, Regenerate, Save to cache) and the cost footer are hidden.
+- Replies stay live, with limits: 20 questions per visit, 300 per day across all visitors, 500 characters per question.
+- A note under the reply box asks visitors not to enter real client information.
+- Streamlit shows visitors a generic error message, never tracebacks (`showErrorDetails = "none"`).
+- Deploy with a dedicated Anthropic API key that has a monthly spend limit, stored in the host's secrets, never in the repo.
 
 ## Demo fallback
 

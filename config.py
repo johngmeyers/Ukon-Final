@@ -1,4 +1,5 @@
 """Shared settings: model, per-token prices, paths, labels."""
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -18,6 +19,14 @@ PRICE_CACHE_READ_PER_TOKEN = 0.20 / 1_000_000
 JUDGE_MODEL = "claude-haiku-5-5"
 JUDGE_PRICE_INPUT_PER_TOKEN = 0.10 / 1_000_000
 JUDGE_PRICE_OUTPUT_PER_TOKEN = 0.50 / 1_000_000
+
+# Public demo mode, on by default for the shared link: cached briefs only, no demo
+# controls or cost footer, and question limits. Run locally with PUBLIC_DEMO=0 to get
+# the demo controls back.
+PUBLIC_DEMO = os.environ.get("PUBLIC_DEMO", "1") != "0"
+MAX_QUESTIONS_PER_SESSION = 20
+MAX_QUESTIONS_PER_DAY = 300   # across all visitors, per server process (about $5 a day at most)
+MAX_QUESTION_CHARS = 500
 
 # CPL address for the "Email your CPL" button. Blank: the agent fills in To.
 CPL_EMAIL = ""

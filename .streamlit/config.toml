@@ -8,3 +8,5 @@ textColor = "#1f1f1f"
 
 [client]
 toolbarMode = "minimal"
+# Visitors see a generic message on errors; details go to the server log only.
+showErrorDetails = "none"

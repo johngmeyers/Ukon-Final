@@ -1,7 +1,8 @@
-streamlit
-anthropic
-pydantic
-pdfplumber
-pypdf
-pyyaml
-python-dotenv
+# Pinned so a library release can't break the shared demo. Python 3.12.
+streamlit==1.66.1
+anthropic==2.3.0
+pydantic==2.14.1
+pdfplumber==0.11.10
+pypdf==6.21.2
+pyyaml==6.0.3
+python-dotenv==1.2.4
